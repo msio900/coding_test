@@ -179,51 +179,42 @@ def solution(phone_book):
 * 찬구
 
 ```java
-package com.programmers.p42577;
+package programmers;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Solution {
+/**
+ * Created by cgkim449
+ * Date: 2021-12-03
+ * Time: 11:02
+ * https://programmers.co.kr/learn/courses/30/lessons/42578
+ */
+public class Hash42578 {
     public static void main(String[] args) {
-// 1 11 119
-        String[] s = {"119", "97674223", "1195524421"};
-        String[] s1 = {"123","456","789"};
-        String[] s2 = {"12","123","1235","567","88"};
 
-        System.out.println(solution(s));
+        String[][] clothes1 = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
+        String[][] clothes2 = {{"crowmask", "face"}, {"bluesunglasses", "face"}, {"smoky_makeup", "face"}};
+
+        System.out.println(solution(clothes2));
     }
 
-    static public boolean solution(String[] phone_book) {
-        boolean answer = true;
+    static public int solution(String[][] clothes) {
+        int answer = 1;
 
-        Set<String> set = new HashSet<>(Arrays.asList(phone_book));
+        Map<String, Integer> map = new HashMap<>();
 
-        loop:
-        for (String s : phone_book) {
-            for (int j = 0; j < s.length(); j++) {
-                if (set.contains(s.substring(0, j))) {
-                    answer = false;
-                    break loop;
-                }
-            }
+        for (String[] clothe : clothes) {
+            map.put(clothe[1], map.getOrDefault(clothe[1], 1) + 1); // 안입는거까지 계산할려고 맨 처음에 1을 넣음
         }
-        return answer;
+
+        for (String key : map.keySet()) {
+            answer *= map.get(key);
+        }
+
+        return answer - 1; // 1 빼줌(전부 안입는 경우 하나 빼줘야됨)
     }
 }
 ```
 
-* 프로그래머스 풀이
-  * `zip()`, `startswith()`함수 사용
-
-```python
-def solution(phoneBook):
-    phoneBook = sorted(phoneBook)
-
-    for p1, p2 in zip(phoneBook, phoneBook[1:]):
-        if p2.startswith(p1):
-            return False
-    return True
-```
-
+* 

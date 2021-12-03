@@ -6,3 +6,5 @@
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42576)
     * 전화번호 목록[👉](./1_hash_2.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42577)
+    * 위장[👉](./1_hash_3.md)
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42578)

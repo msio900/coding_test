@@ -8,6 +8,16 @@
 * Summary🖋️
   * 21.12.03. (금)[⭐](###21.12.03.-(금))
 ## Summary🖋️
+
+### The people who studied with me
+
+* 🤝찬구[@cgkim449](https://github.com/cgkim449/algorithm-practice)
+
+* 🤝준오[@ChoJunOh](https://github.com/ChoJunOh/CodingTest)
+* 🤝진숙[@dev-ku](https://github.com/dev-ku)
+
+
+
 ### 21.12.03. (금)
 
 * 코딩테스트 대비 문제 풀이

@@ -1,4 +1,4 @@
-# 3_활용도가 높은 자료구조: 트리 자료 구조[↩](./README.md)
+# 3_활용도가 높은 자료구조: 트리 자료 구조[↩](../dongbinna_algorithm)
 
 ## content📑
 

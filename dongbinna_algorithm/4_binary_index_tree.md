@@ -2,15 +2,15 @@
 
 ## contents📑<a id="contents"></a>
 
-1. [데이터 업데이트가 가능한 상황에서의 구간 합(Interval Sum)문제](#Interval Sum)
-2. [바이너리 인덱스 트리](#바이너리 인덱스 트리)
-## 4_1 데이터 업데이트가 가능한 상황에서의 구간 합(Interval Sum)문제[📑](#contents)<a id="Interval Sum"></a>
+1. [데이터 업데이트가 가능한 상황에서의 구간 합(Interval Sum)문제](#Interval-Sum)
+2. [바이너리 인덱스 트리](#바이너리-인덱스-트리)
+## 4_1 데이터 업데이트가 가능한 상황에서의 구간 합(Interval Sum)문제[📑](#contents)<a id="Interval-Sum"></a>
 
 * BOJ '구간 합 구하기' 문제 : https://www.acmicpc.net/problem/2042
 
 ![](./image/4_1.png)
 
-## 4_2 바이너리 인덱스 트리(Binary Indexed Tree)[📑](#content)<a id="바이너리 인덱스 트리"></a>
+## 4_2 바이너리 인덱스 트리(Binary Indexed Tree)[📑](#content)<a id="바이너리-인덱스-트리"></a>
 
 * **바이너리 인덱스 트리(binary indexed tree)**는 2진법 인덱스 구조를 활용해 구간 합 문제를 효과적으로 해결해 줄 수 있는 자료구조를 의미합니다.
   * 펜윅 트리(fenwick tree)라고도 합니다.

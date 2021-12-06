@@ -1,11 +1,11 @@
 # 1_가장 기본이 되는 자료 구조 : 스택과 큐 [↩](../dongbinna_algorithm)
 
-## content📑
+## contents📑<a id="contents"></a>
 
-1. [stack](##1_1`스택`:stack📑)
-2. [que](##1_2`큐`:que📑)
+1. [stack](#stack)
+2. [queue](#queue)
 
-## 1_1`스택`:stack[📑](##content📑)
+## 1_1`스택`:stack[📑](#contents)<a id="stack"></a>
 
 ![](./image/1_1.png)
 
@@ -35,7 +35,7 @@ print(stack) # 최하단 원소부터 출력
 최하단 원소부터 출력 : [5, 2, 3, 1]
 ```
 
-## 1_2`큐`:que[📑](##content📑)
+## 1_2`큐`:queue[📑](#contents)<a id="queue"></a>
 
 ![](./image/1_3.png)
 

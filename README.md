@@ -1,15 +1,15 @@
 # coding_test_practice
 > 코딩테스트를 준비하기 위한 repository입니다.
 
-## contents📑
+## contents📑<a id="contents"></a>
 * 최적의 코딩을 결정하는 기본 알고리즘[👉](./dongbinna_algorithm)    |   [출처🖥](https://github.com/ndb796/python-for-coding-test)
 * Baekjoon Online Judge[👉](./acmicpc)                          |   [출처🖥](https://www.acmicpc.net/)
 * Programmers Codingtest Practice[👉](./programmers_practice)   |   [출처🖥](https://programmers.co.kr/learn/challenges)
-* Summary🖋️
-  * 21.12.03. (금)[⭐](###21.12.03.-(금))
-## Summary🖋️
+* The people who studied with me[🤝](#people)
+* Summary[🖋️](#Summary)
+  * 21.12.03. (금)[⭐](#21.12.03. (금))
 
-### The people who studied with me
+## The people who studied with me🤝<a id="people"></a>
 
 * 🤝찬구[@cgkim449](https://github.com/cgkim449/algorithm-practice)
 
@@ -17,8 +17,8 @@
 * 🤝진숙[@dev-ku](https://github.com/dev-ku)
 
 
-
-### 21.12.03. (금)
+## Summary🖋️<a id="Summary"></a>
+### 21.12.03. (금)[📑](#contents)<a id="21.12.03. (금)"></a>
 
 * 코딩테스트 대비 문제 풀이
   * BOJ 9012 : 괄호 - 미통과

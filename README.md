@@ -1,4 +1,4 @@
-# coding_test_practice
+# ⌨코딩테스트 연습
 > 코딩테스트를 준비하기 위한 repository입니다.
 
 ## contents📑<a id="contents"></a>

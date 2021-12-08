@@ -12,7 +12,6 @@
 ## The people who studied with me🤝<a id="people"></a>
 
 * 🤝찬구[@cgkim449](https://github.com/cgkim449/algorithm-practice)
-
 * 🤝준오[@ChoJunOh](https://github.com/ChoJunOh/CodingTest)
 * 🤝진숙[@dev-ku](https://github.com/dev-ku)
 

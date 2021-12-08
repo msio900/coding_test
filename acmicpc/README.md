@@ -11,3 +11,5 @@
     > [문제📝](https://www.acmicpc.net/problem/1874)
 * 12/7(화) 1406  : 에디터[👉](./1406/1406.md)
     > [문제📝](https://www.acmicpc.net/problem/1406)
+* 12/8(수) 10845  : 큐[👉](./10845/10845.md)
+    > [문제📝](https://www.acmicpc.net/problem/10845)

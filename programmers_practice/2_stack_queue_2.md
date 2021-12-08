@@ -46,18 +46,70 @@
 * 풀이 1
 
 ```python
+def solution(priorities, location):
+    answer = 0
+    w_list = [i for i in range(len(priorities))]
+    print(w_list)
+    print(priorities)
+    J = w_list[location]
+    print('j는',J)
+    point_idxs = []
+
+    for i in range(len(priorities)):
+        for j in range(i+1,len(priorities)):
+            print('i : ',i,'j :',j)
+            if priorities[i] < priorities[j]:
+                point_idxs.append(i)
+                break
+    for point_idx in point_idxs:
+        w_list.append(w_list[point_idx])
+        print(w_list)
+    for point_idx in point_idxs:
+        w_list.pop(0)
+        print(w_list)
+
+    
+    answer = w_list.index(J)+1
+        
+
+    return answer
+
+
+if __name__ == '__main__':
+    priorities = [2, 1, 3, 2]
+    location = 2
+    print(solution(priorities, location))
 
 ```
 
 * 채점 결과
 
 ```python
-
+테스트 1 〉	통과 (4.22ms, 10.3MB)
+테스트 2 〉	실패 (2.29ms, 10.2MB)
+테스트 3 〉	실패 (런타임 에러)
+테스트 4 〉	실패 (런타임 에러)
+테스트 5 〉	통과 (0.01ms, 10.3MB)
+테스트 6 〉	실패 (0.52ms, 10.3MB)
+테스트 7 〉	실패 (0.59ms, 10.3MB)
+테스트 8 〉	실패 (3.87ms, 10.3MB)
+테스트 9 〉	실패 (0.11ms, 10.3MB)
+테스트 10 〉	실패 (0.35ms, 10.4MB)
+테스트 11 〉	실패 (1.39ms, 10.3MB)
+테스트 12 〉	실패 (런타임 에러)
+테스트 13 〉	실패 (1.13ms, 10.3MB)
+테스트 14 〉	통과 (0.01ms, 10.3MB)
+테스트 15 〉	실패 (런타임 에러)
+테스트 16 〉	실패 (0.13ms, 10.2MB)
+테스트 17 〉	실패 (1.79ms, 10.3MB)
+테스트 18 〉	실패 (0.06ms, 10.2MB)
+테스트 19 〉	실패 (2.04ms, 10.3MB)
+테스트 20 〉	실패 (런타임 에러)
 ```
 
 ### 실패😂
 
-> 
+> 시간 초과....
 
 * 2차 시도
 

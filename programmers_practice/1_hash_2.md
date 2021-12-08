@@ -1,4 +1,4 @@
-# 해시2 : 전화번호 목록
+# 해시2 : 전화번호 목록[↩](../programmers_practice)
 
 [해시2 : 전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
 

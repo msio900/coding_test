@@ -1,4 +1,4 @@
-# 스택/큐1 : 기능개발
+# 스택/큐1 : 기능개발[↩](../programmers_practice)
 
 [스택/큐1 : 기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
 

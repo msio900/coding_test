@@ -1,4 +1,4 @@
-# 스택/큐2 : 프린터
+# 스택/큐2 : 프린터[↩](../programmers_practice)
 
 [스택/큐2 : 프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 

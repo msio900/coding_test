@@ -1,32 +1,38 @@
 import sys
 
-N_list = list(sys.stdin.readline().strip())
-M = int(sys.stdin.readline())
-cursor = len(N_list)
+N = int(sys.stdin.readline())
 
-for _ in range(M):
-    move = sys.stdin.readline().split()
-    if move[0] == 'L':
-        if cursor > 0:
-            cursor -= 1
+queue = []
+
+for _ in range(N):
+    input = sys.stdin.readline().split()
+    command = input[0]
+    if command == 'push':   # push X : 정수 X를 큐에 넣는 연산이다.
+        queue.append(input[1])
+        
+    if command == 'pop':    # pop: 큐에서 가장 앞에 있는 정수를 빼고, 그 수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+        if len(queue) == 0:
+            print(-1)
         else:
-            pass
+            print(queue.pop(0))
 
-    if move[0] == 'D':
-        if cursor < len(N_list):
-            cursor += 1
+    if command == 'size':   # size: 큐에 들어있는 정수의 개수를 출력한다.
+        print(len(queue))
+    
+    if command == 'empty':  # empty: 큐가 비어있으면 1, 아니면 0을 출력한다.
+        if len(queue) == 0:
+            print(1)
         else:
-            pass
-
-    if move[0] == 'B':
-        if cursor <= 0:
-            pass
+            print(0)
+    
+    if command == 'front':  # front: 큐의 가장 앞에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+        if len(queue) == 0:
+            print(-1)
         else:
-            del N_list[cursor-1]
-            cursor -= 1
+            print(queue[0])
 
-    if move[0] == 'P':
-        N_list.insert(cursor, move[1])
-        cursor += 1
-
-print(N_list)
+    if command == 'back':   # back: 큐의 가장 뒤에 있는 정수를 출력한다. 만약 큐에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+        if len(queue) == 0:
+            print(-1)
+        else:
+            print(queue[-1])

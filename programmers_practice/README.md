@@ -10,7 +10,10 @@
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42578)
     * 🔳12/6(월)  베스트앨범[👉](./1_hash_4.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42579)
+* 스택/큐
     * 🔳12/7(화)  기능개발[👉](./2_stack_queue_1.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
     * 12/8(수)  프린터[👉](./2_stack_queue_2.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42587)
+    * 12/9(목)  다리를 지나는 트럭[👉](./2_stack_queue_3.md)
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42583)

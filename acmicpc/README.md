@@ -13,3 +13,5 @@
     > [문제📝](https://www.acmicpc.net/problem/1406)
 * 12/8(수) 10845  : 큐[👉](./10845/10845.md)
     > [문제📝](https://www.acmicpc.net/problem/10845)
+* 12/9(목) 10845  : 요세푸스 문제[👉](./1158/1158.md)
+    > [문제📝](https://www.acmicpc.net/problem/1158)

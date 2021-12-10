@@ -1,37 +1,48 @@
 import sys
 
-input = sys.stdin.readline().split()
+N = int(sys.stdin.readline())
 
-N = int(input[0])
-K = int(input[1])
+deque = []
+for _ in range(N):
+    input = sys.stdin.readline().split()
+    command = input[0]
 
-array = list(range(1,N+1))
-num_array = [i*K-1 for i in range(1, N+1)]
-
-
-out_array = []
-
-print(array)
-print(num_array)
-j = 0
-for i in num_array:
-    print("조건문 전")
-    print(array)
-    print(out_array)
-    if len(array) <= i-j:
-        print("넘어감")
-        array = array + array
-        out_array.append(array.pop(i-j))
-        print(array)
-        print(out_array)
-    else:
-        print("안 넘어감")
-        out_array.append(array.pop(i-j))
-        print(array)
-        print(out_array)
-    j += 1
-# [1, 2, 3, 4, 5, 6, 7]   3번째 [2] 3 탈락 < 3 >
-# [1, 2, 4, 5, 6, 7]      3번째 [5] 6 탈락 < 3, 6 >
-# [1, 2, 4, 5, 7]         3번째 [1] 2 탈락 < 3, 6, 2 >
-# [1, 4, 5, 7]            3번째 [4] 7 탈락 < 3, 6, 2, 7 >
-
+    # push_front X: 정수 X를 덱의 앞에 넣는다.
+    if command == 'push_front': 
+        deque.insert(0, input[1])
+    # push_back X: 정수 X를 덱의 뒤에 넣는다.
+    elif command == 'push_back':
+        deque.insert(-1, input[1])
+    # pop_front: 덱의 가장 앞에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    elif command == 'pop_front':
+        if len(deque) ==0:
+            print(-1)
+        else:
+            print(deque.pop(0))
+    # pop_back: 덱의 가장 뒤에 있는 수를 빼고, 그 수를 출력한다. 만약, 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    elif command == 'pop_back': 
+        if len(deque) ==0:
+            print(-1)
+        else:
+            print(deque.pop())
+    # size: 덱에 들어있는 정수의 개수를 출력한다.
+    elif command == 'size': 
+        print(len(deque))
+    # empty: 덱이 비어있으면 1을, 아니면 0을 출력한다.
+    elif command == 'empty': 
+        if len(deque) == 0:
+            print(1)
+        else:
+            print(0)    
+    # front: 덱의 가장 앞에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    elif command == 'front': 
+        if len(deque) == 0:
+            print(-1)
+        else:
+            print(deque[0])
+    # back: 덱의 가장 뒤에 있는 정수를 출력한다. 만약 덱에 들어있는 정수가 없는 경우에는 -1을 출력한다.
+    elif command == 'back':
+        if len(deque) == 0:
+            print(-1)
+        else:
+            print(deque[-1])

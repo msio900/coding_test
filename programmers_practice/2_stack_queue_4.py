@@ -1,21 +1,16 @@
-def solution(priorities, location):
-    answer = 0
-    w_list = list(range(len(priorities)))
-    J = w_list[location]
-
-    for i in range(len(priorities)):
-        for j in range(i+1,len(priorities)):
-            print('i : ',i,'j :',j)
-            if priorities[i] < priorities[j]:
-                print(priorities[i],":", priorities[j])
-
-    answer = w_list.index(J)+1
-        
-
+def solution(prices):
+    answer = []
+    for i in range(0, len(prices)):
+        for j in range(i+1, len(prices)):
+            if prices[i] > prices[j]:
+                answer.append(j-i)
+                break
+        if j == (len(prices)-1):
+            answer.append(j-i)
     return answer
 
 
 if __name__ == '__main__':
-    priorities = [2, 1, 3, 2]
-    location = 2
-    print(solution(priorities, location))
+    prices = [1, 2, 3, 2, 3]
+
+    print(solution(prices))

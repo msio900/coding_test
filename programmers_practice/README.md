@@ -17,3 +17,5 @@
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42587)
     * 12/9(목)  다리를 지나는 트럭[👉](./2_stack_queue_3.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42583)
+    * 12/10(금)  주식 가격[👉](./2_stack_queue_4.md)
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)

@@ -17,3 +17,5 @@
     > [문제📝](https://www.acmicpc.net/problem/1158)
 * 12/10(금) 10866  : 덱[👉](./10866/10866.md)
     > [문제📝](https://www.acmicpc.net/problem/10866)
+* 12/13(월) 17413  : 덱[👉](./17413/17413.md)
+    > [문제📝](https://www.acmicpc.net/problem/17413)

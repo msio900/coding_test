@@ -19,3 +19,6 @@
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42583)
     * 12/10(금)  주식 가격[👉](./2_stack_queue_4.md)
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)
+* 힙(Heap)
+    * 12/13(월)  더 맵게[👉](./3_heap_1.md)
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42626)

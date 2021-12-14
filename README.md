@@ -3,6 +3,7 @@
 
 ## contents📑<a id="contents"></a>
 * 최적의 코딩을 결정하는 기본 알고리즘[👉](./dongbinna_algorithm)    |   [출처🖥](https://github.com/ndb796/python-for-coding-test)
+* 이것이 취업을 위한 코딩테스트다[👉](./this_is_codingtest)         |   [출처🖥](https://www.youtube.com/watch?v=m-9pAwq1o3w&list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&ab_channel=%EB%8F%99%EB%B9%88%EB%82%98)
 * Baekjoon Online Judge[👉](./acmicpc)                          |   [출처🖥](https://www.acmicpc.net/)
 * Programmers Codingtest Practice[👉](./programmers_practice)   |   [출처🖥](https://programmers.co.kr/learn/challenges)
 * The people who studied with me[🤝](#people)

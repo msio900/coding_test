@@ -98,8 +98,28 @@
 
 ### 🤝다른 풀이
 
-* 찬구
+* 준오
+  * SJF(?)이용
 
 ```java
+import heapq
 
+def solution(jobs):
+    cnt = len(jobs)
+    jobs.sort(reverse=True)
+    
+    pq = []
+    now = 0
+    answer = 0
+    while jobs or pq:
+        while jobs and jobs[-1][0] <= now:
+            heapq.heappush(pq,(jobs[-1][1],jobs[-1][0]))
+            jobs.pop()
+        if pq:
+            t,req = heapq.heappop(pq)
+            answer += t+now-req
+            now += t
+        else:
+            now += 1
+    return answer//cnt
 ```

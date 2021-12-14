@@ -2,4 +2,4 @@
 > 강사 : 동빈나 [🖥](https://github.com/ndb796/python-for-coding-test)
 
 * Part2 : 주요 알고리즘 이론과 실전 문제
-    * Chapter3 : 그리디[👉](./2_greedy.md)
+    * Chapter3 : 그리디[👉](./3_greedy.md)

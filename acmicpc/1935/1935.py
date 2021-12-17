@@ -1,11 +1,14 @@
 import sys
 
-input = str(sys.stdin.readline().strip())
-cut = 0
-for i in range(len(input)-1):
-    if (input[i] == '(') & (input[i+1] == ')'):
-        cut += 1
-        print(f'절단 {cut}회')
-    elif (input[i] == '(') & (input[i+1] == '('):
-        cut += 1
-        print(f'절단 {cut}회')
+
+
+N = int(sys.stdin.readline())
+sentence = sys.stdin.readline().strip()
+
+stack = []
+operator = ['+','-','/','*']
+
+for i in sentence:
+    if i in operator:
+        stack.append(i)
+print(stack)

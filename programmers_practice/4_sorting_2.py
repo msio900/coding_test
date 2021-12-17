@@ -1,12 +1,8 @@
-def solution(jobs):
-    answer = 0
-    for i in range(0,len(jobs)):
-        print(jobs[i][1]-jobs[i+1][0]+jobs[i+1][1])
-
-
-    return answer
+def solution(numbers):
+    numbers.sort(key = lambda x : str(x) * 3, reverse = True)
+    return str(int("".join(list(map(str, numbers)))))
 
 
 if __name__ == '__main__':
-    jobs = [[0, 3], [1, 9], [2, 6]]
-    print(solution(jobs))
+    numbers = [3, 30, 34, 5, 9]
+    print(solution(numbers))

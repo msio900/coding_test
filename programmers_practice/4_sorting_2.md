@@ -1,6 +1,6 @@
 # 정렬2 : 가장 큰 수[↩](../programmers_practice)
 
-[힙(Heap)2 : 디스크 컨트롤러](https://programmers.co.kr/learn/courses/30/lessons/42627)
+[정렬2 : 가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
 
 ## 🖋️문제
 

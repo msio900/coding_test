@@ -1,5 +1,4 @@
 import sys
-import math
 
 N = int(sys.stdin.readline())
 expression = sys.stdin.readline().strip()
@@ -11,8 +10,10 @@ for i in range(N):
 # print(f'N : {N}\n str : {expression}\n nums : {nums}')
 
 stack=[]
-
+cnt = 0
 for i in expression:
+    cnt+=1
+    print(cnt,'회차')
     #문자이면
     if i.isupper():
         print(f'i가 문자일 경우 {i}')

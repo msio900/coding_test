@@ -44,5 +44,6 @@
     * 12/17(금)  가장큰수[👉](./4_sorting_2.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42746)
+    * 12/20(월)  H-Index[👉](./4_sorting_3.md)
         
-        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42747)

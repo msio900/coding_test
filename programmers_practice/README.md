@@ -47,3 +47,7 @@
     * 12/20(월)  H-Index[👉](./4_sorting_3.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42747)
+* 완전탐색
+    * 12/21(화)  모의고사[👉](./5_BFS_1.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42840)

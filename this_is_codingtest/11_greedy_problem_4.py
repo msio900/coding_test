@@ -1,8 +1,9 @@
 import sys
 
 N = int(sys.stdin.readline())
-coins = sys.stdin.readline().split()
 
+coins = sys.stdin.readline().split()
+# 3 2 1 1 9
 coins = [int(i) for i in coins]
 
 print(coins)

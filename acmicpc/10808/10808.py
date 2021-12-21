@@ -1,17 +1,19 @@
 import sys
+from collections import Counter
 
-expression = list(map(str, sys.stdin.readline().strip()))
+S = sys.stdin.readline().strip()
+S = [str(i) for i in S]
 
+alphabet = [chr(i) for i in range(97, 123)]
 
-operator = []
+X = Counter(alphabet)+Counter(S)
+X = dict(X)
 
-for i in range(len(expression)):
-    print(expression)
-    if expression: 
-        expression.append(expression.pop(i))
+answer = []
+for i in X:
+    answer.append(str(X[i] - 1))
 
-
-print(expression)
+print(" ".join(answer))
 
 
 ## 

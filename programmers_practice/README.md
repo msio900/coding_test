@@ -51,3 +51,6 @@
     * 12/21(화)  모의고사[👉](./5_BFS_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
+    * 12/22(수)  소수 찾기[👉](./5_BFS_2.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42839)

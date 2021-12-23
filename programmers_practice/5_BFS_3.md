@@ -28,32 +28,45 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yell
 
 ## 💡풀이
 
-### 1차 시도
 
 ```python
+def solution(brown, yellow):
+    answer = []
+    stack = []
+    for i in range(1, yellow+1):
+        if yellow % i == 0:
+            stack.append(i)
+    print(stack)
+    for j, i in zip(range(len(stack)), reversed(range(len(stack)))):
+        if 2*stack[i]+2*stack[j]+4 == brown:
+            a, b = stack[i], stack[j]
+            break
+    answer = [a+2, b+2]
 
+
+    return answer
 ```
 
 * 채점 결과
 
 ```python
-
-```
-
-### 실패😂
-
-* 
-
-### 2차 시도😂
-
-```python
-
-```
-
-* 채점 결과
-
-```python
-
+정확성  테스트
+테스트 1 〉	통과 (0.01ms, 10.2MB)
+테스트 2 〉	통과 (0.01ms, 10.3MB)
+테스트 3 〉	통과 (56.71ms, 10.2MB)
+테스트 4 〉	통과 (0.15ms, 10.2MB)
+테스트 5 〉	통과 (0.50ms, 10.3MB)
+테스트 6 〉	통과 (17.44ms, 10.2MB)
+테스트 7 〉	통과 (67.56ms, 10.3MB)
+테스트 8 〉	통과 (55.63ms, 10.3MB)
+테스트 9 〉	통과 (65.04ms, 10.3MB)
+테스트 10 〉	통과 (76.75ms, 10.2MB)
+테스트 11 〉	통과 (0.01ms, 10.3MB)
+테스트 12 〉	통과 (0.01ms, 10.3MB)
+테스트 13 〉	통과 (0.01ms, 10.3MB)
+채점 결과
+정확성: 100.0
+합계: 100.0 / 100.0
 ```
 
 ### 성공😂
@@ -63,7 +76,13 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yell
 * 프로그래머스 풀이
 
 ```python
-
+# 문제가 개편되었습니다. 이로 인해 함수 구성이나 테스트케이스가 변경되어, 과거의 코드는 동작하지 않을 수 있습니다.
+# 새로운 함수 구성을 적용하려면 [코드 초기화] 버튼을 누르세요. 단, [코드 초기화] 버튼을 누르면 작성 중인 코드는 사라집니다.
+def solution(brown, red):
+    for i in range(1, int(red**(1/2))+1):
+        if red % i == 0:
+            if 2*(i + red//i) == brown-4:
+                return [red//i+2, i+2]
 ```
 
 * 찬구

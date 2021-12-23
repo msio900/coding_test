@@ -1,21 +1,27 @@
-def solution(answers):
+# for i, j in zip(range(10), reversed(range(10))):
+#     print(i,j)
+
+
+
+def solution(brown, yellow):
     answer = []
-    A = []
-    B = []
-    C = []
-    # 1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ...
-    for i in range(len(answers)):
-        A.append(i+1 - 5*(i//5))
-    # 2번 수포자가 찍는 방식: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, ...
-    for i in range(len(answers)):
-        if i//2 == 0:
-            print(i)
-        A.append(i+1 - 5*(i//5))
-    # 3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
+    stack = []
+    for i in range(1, yellow+1):
+        if yellow % i == 0:
+            stack.append(i)
+    print(stack)
+    for j, i in zip(range(len(stack)), reversed(range(len(stack)))):
+        if 2*stack[i]+2*stack[j]+4 == brown:
+            a, b = stack[i], stack[j]
+            break
+    answer = [a+2, b+2]
+
+
     return answer
 
 
 
 if __name__ == '__main__':
-    answers = [1,2,3,4,5]
-    print(solution(answers))
+    brown = 24
+    yellow = 24
+    print(solution(brown, yellow))

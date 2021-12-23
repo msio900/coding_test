@@ -7,7 +7,11 @@
 
 * Part3 : 알고리즘 유형별 기출문제
     * Chapter 11 : 그리디 문제
-        * 12/20(월) Q04 : 만들 수 없는 금액[👉](./11_greedy_problem_4.md)
+      * 12/20(월) Q04 : 만들 수 없는 금액[👉](./11_greedy_problem_4.md)
 
     * Chapter 12 : 구현 문제
-        * 12/20(월) Q07 : 럭키 스트레이트[👉](./12_impl_problem_4.md)
+      * 12/20(월) Q07 : 럭키 스트레이트[👉](./12_impl_problem_7.md)
+
+    * Chapter 13 : DFS/BFS 문제
+      * 12/22(목) Q15 : 특정 거리의 도시 찾기[👉](./13_DFS_BFS_problem_1.md)
+      * 12/22(목) Q16 : 연구소[👉](./13_DFS_BFS_problem_2.md)

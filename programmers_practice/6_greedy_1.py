@@ -1,27 +1,16 @@
-# for i, j in zip(range(10), reversed(range(10))):
-#     print(i,j)
+# 번호는 체격순
+# 앞번호의 학생이나 바로 뒷번호의 학생에게만 체육복을 빌려줄수 있음.
+# 4 : 3, 5 에게만
 
 
-
-def solution(brown, yellow):
-    answer = []
-    stack = []
-    for i in range(1, yellow+1):
-        if yellow % i == 0:
-            stack.append(i)
-    print(stack)
-    for j, i in zip(range(len(stack)), reversed(range(len(stack)))):
-        if 2*stack[i]+2*stack[j]+4 == brown:
-            a, b = stack[i], stack[j]
-            break
-    answer = [a+2, b+2]
-
-
+def solution(n, lost, reserve):
+    answer = 0
     return answer
 
 
 
 if __name__ == '__main__':
-    brown = 24
-    yellow = 24
-    print(solution(brown, yellow))
+    n = 5
+    lost = [2, 4]
+    reserve = [1, 3, 5]
+    print(solution(n, lost, reserve))

@@ -1,7 +1,7 @@
 # Programmers Codingtest Practice[↩](../../../)
 > 풀이 과정
 
-* 해시
+1. 해시
     * 12/1(수)  완주하지 못한 선수[👉](./1_hash_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42576)
@@ -14,7 +14,7 @@
     * 🔳12/6(월)  베스트앨범[👉](./1_hash_4.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42579)
-* 스택/큐
+2. 스택/큐
     * 🔳12/7(화)  기능개발[👉](./2_stack_queue_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
@@ -27,7 +27,7 @@
     * 12/10(금)  주식 가격[👉](./2_stack_queue_4.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)
-* 힙(Heap)
+3. 힙(Heap)
     * 12/13(월)  더 맵게[👉](./3_heap_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42626)
@@ -37,7 +37,7 @@
     * 🔳12/15(수)  이중우선순위큐[👉](./3_heap_3.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42628)
-* 정렬        
+4. 정렬        
     * 🔳12/16(목)  K번째수[👉](./4_sorting_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42748)
@@ -47,7 +47,7 @@
     * 12/20(월)  H-Index[👉](./4_sorting_3.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42747)
-* 완전탐색
+5. 완전탐색
     * 12/21(화)  모의고사[👉](./5_BFS_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
@@ -57,3 +57,7 @@
     * 12/23(목)  카펫[👉](./5_BFS_3.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42842)
+6. 탐욕법(Greedy)
+    * 12/24(금)  체육복[👉](./6_greedy_1.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42862)

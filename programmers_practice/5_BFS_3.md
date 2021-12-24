@@ -96,3 +96,43 @@ def solution(brown, red):
 ```python
 
 ```
+
+* 경현
+
+```java
+class Solution {
+    public int[] solution(int brown, int yellow) {
+        int[] answer = {};
+        
+        //i는 세로 갯수
+        for(int i = 1; i <= brown / 2; i++){
+            int row = brown - i*2; // (전채갯수 - 세로갯수*2) => 가로개수
+            if(row % 2 == 0) {
+                answer = new int[]{row/2, i+2};
+                if(answer[0]*answer[1] == yellow+brown)
+                    break;
+            }
+            
+        }
+        
+        return answer;
+    }
+}
+```
+
+* 숙영
+
+```python
+def solution(brown, yellow):
+    answer=[]
+
+    for i in range(brown):
+      j = 0
+      j = brown/2-i+2
+      if (i-2)*(j-2)==yellow:
+        answer.append(int(j))
+        answer.append(int(i))
+        break
+    return answer
+```
+

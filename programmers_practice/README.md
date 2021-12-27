@@ -61,3 +61,6 @@
     * 12/24(금)  체육복[👉](./6_greedy_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42862)
+    * 12/27(월)  조이스틱[👉](./6_greedy_2.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42860)

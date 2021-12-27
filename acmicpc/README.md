@@ -60,3 +60,5 @@
      > [문제📝](https://www.acmicpc.net/problem/2743)
    * 12/27(월) 11655  : ROT13[👉](./11655/11655.md)
      > [문제📝](https://www.acmicpc.net/problem/11655)
+   * 12/28(화) 10824  : 네 수[👉](./10824/10824.md)
+     > [문제📝](https://www.acmicpc.net/problem/10824)

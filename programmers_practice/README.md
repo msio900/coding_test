@@ -64,3 +64,6 @@
     * 12/27(월)  조이스틱[👉](./6_greedy_2.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42860)
+    * 12/28(화)  큰 수 만들기[👉](./6_greedy_3.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42883)

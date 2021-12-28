@@ -1,34 +1,29 @@
-def solution(name):
+def solution(number, k):
+    answer = []  # Stack
+    cnt = 0
+    for num in number:
+        cnt+= 1
+        if not answer:
+            print(f'{cnt}회, num : {num}이 answer에 없을 경우')
+            answer.append(num)
+            print('answer', answer)
+            continue
+        if k > 0:
+            print(f'{cnt}회, k : {k}이 0보다 큰 경우')
+            while answer[-1] < num:
+                print(f'answer[-1] : {answer[-1]}이 num : {num}보다 작을때까지 반복')
+                answer.pop()
+                print('answer', answer)
+                k -= 1
+                if not answer or k <= 0:
+                    print(f'answer : {answer}, k : {k}')
+                    break
+        answer.append(num)
 
-    # ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-
-    answer = 0
-    alpha = [chr(i) for i in range(ord('A'), ord('Z')+1)]
-    name_loc = [ord(i) - ord('A') for i in name]
-    print(name_loc)
-    return answer
+    answer = answer[:-k] if k > 0 else answer
+    return ''.join(answer)
 
 if __name__ == '__main__':
-    name = "JEROEN"
-    print(solution(name))
-
-
-
-# 1234123412341234
-# 1234123412341234
-# ________________
-
-
-def solution(name):
-    # ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    # JAZ
-    # 앞으로 가는게 최선일지 뒤로 가는게 최선일지?
-    # A일 경우 A를 지나서 가는게 나을지? 거꾸로 가는게 나을지? if i >= len(name)/2
-    # A가 아닐경우
-    # 위 아래로 움직이는 것은? n : -13 / +13
-    # JDDDDFFEREFDFDFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
-    answer = 0
-    alpha = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
-    name_loc = [ord(i) - ord('A') for i in name]
-    print(name_loc)
-
+    number = "4177252841"
+    k = 4
+    print(solution(number, k))

@@ -67,3 +67,6 @@
     * 12/28(화)  큰 수 만들기[👉](./6_greedy_3.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42883)
+    * 12/29(화)  구명보트[👉](./6_greedy_4.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42885)

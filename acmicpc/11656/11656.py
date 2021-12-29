@@ -1,9 +1,11 @@
 import sys
 
-# .split()
-# .rstrip()
-# list(map(str, ....))
+S = list(map(str, sys.stdin.readline().rstrip()))
 
-A, B, C, D = sys.stdin.readline().split()   # input()
+answer = []
+for i in range(len(S)):
+    answer.append(''.join(S[i:]))
+answer.sort()
+for i in answer:
+    print(i)
 
-print(int(A+B)+int(C+D))

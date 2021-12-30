@@ -1,11 +1,11 @@
 import sys
 
-S = list(map(str, sys.stdin.readline().rstrip()))
+A, B, C = map(int, sys.stdin.readline().split())
 
-answer = []
-for i in range(len(S)):
-    answer.append(''.join(S[i:]))
-answer.sort()
-for i in answer:
-    print(i)
+print((A+B)%C)
 
+print(((A%C) + (B%C))%C)
+
+print((A*B)%C)
+
+print(((A%C)*(B%C))%C)

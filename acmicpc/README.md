@@ -71,3 +71,5 @@
      > [문제📝](https://www.acmicpc.net/problem/2609)
    * 1/3(월) 1934 : 최소공배수[👉](./1934/1934.md)
      > [문제📝](https://www.acmicpc.net/problem/1934)
+   * 1/4(화) 1978 : 소수 찾기[👉](./1978/1978.md)
+     > [문제📝](https://www.acmicpc.net/problem/1978)

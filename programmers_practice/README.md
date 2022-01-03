@@ -73,6 +73,13 @@
     * 12/30(목)  섬 연결하기[👉](./6_greedy_5.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42861)
-    * 12/31(금)  N으로 표현[👉](./7_dynamic_programming_1.md)
+    * 12/31(금)  단속카메라[👉](./6_greedy_6.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42884)
+7. 동적계획법(Dynamic Programming)
+    * 1/3(월)  N으로 표현[👉](./7_dynamic_programming_1.md)
         
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42895)
+    * 1/4(화)  정수 감각형[👉](./7_dynamic_programming_2.md)
+        
+        > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43105)

@@ -1,11 +1,15 @@
 import sys
 
-A, B, C = map(int, sys.stdin.readline().split())
+T = int(sys.stdin.readline())
 
-print((A+B)%C)
+def GCD(A, B):
+    while (B!=0):
+        A = A % B
+        A, B = B, A
+    return A
 
-print(((A%C) + (B%C))%C)
+for _ in range(T):
+    A, B = map(int, sys.stdin.readline().split())
 
-print((A*B)%C)
 
-print(((A%C)*(B%C))%C)
+    print(int((A * B) / GCD(A, B)))

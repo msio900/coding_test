@@ -1,15 +1,17 @@
 import sys
 
-T = int(sys.stdin.readline())
+N = int(sys.stdin.readline())
+list = list(map(int, sys.stdin.readline().split()))
+answer = N
 
-def GCD(A, B):
-    while (B!=0):
-        A = A % B
-        A, B = B, A
-    return A
+for i in list:
+    if i != 1:
+        for j in range(2, i):
+            print(f'{i} / {j} = {i % j}')
+            if i % j == 0:
+                answer -= 1
+                break
 
-for _ in range(T):
-    A, B = map(int, sys.stdin.readline().split())
-
-
-    print(int((A * B) / GCD(A, B)))
+    else:
+        answer -= 1
+print(answer)

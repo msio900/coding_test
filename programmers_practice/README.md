@@ -108,3 +108,8 @@
     * 1/10(월)  네트워크[👉](./8_DFS_BFS_2.md)
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43162)
+      
+    * 1/11(화)  단어 변환[👉](./8_DFS_BFS_3.md)
+
+      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43163)
+

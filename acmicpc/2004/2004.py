@@ -41,7 +41,6 @@
 # print(answer)
 import sys
 
-
 def countNum(N, num):
     count = 0
     divNum = num

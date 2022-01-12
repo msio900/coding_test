@@ -112,4 +112,7 @@
     * 1/11(화)  단어 변환[👉](./8_DFS_BFS_3.md)
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43163)
+    * 1/12(수)  여행 경로[👉](./8_DFS_BFS_4.md)
+
+      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43164)
 

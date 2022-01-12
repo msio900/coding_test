@@ -1,4 +1,4 @@
-# 깊이/너비 우선 탐색(DFS/BFS)2 : 단어 변환[↩](../programmers_practice)
+# 깊이/너비 우선 탐색(DFS/BFS)3 : 단어 변환[↩](../programmers_practice)
 
 [깊이/너비 우선 탐색(DFS/BFS)3 : 단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163)
 

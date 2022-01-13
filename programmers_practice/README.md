@@ -116,3 +116,8 @@
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43164)
 
+9. 이분탐색(Binary Search)[🔗](https://programmers.co.kr/learn/courses/30/parts/12486)
+
+   * 1/13(목)  입국심사[👉](./9_binary_search_1.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43238)

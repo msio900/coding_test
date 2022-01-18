@@ -19,5 +19,5 @@ while N:
         N = N//-2 + 1
     else:
         res = '0' + res
-        N //= -2
+        N = N//-2
 print(res)

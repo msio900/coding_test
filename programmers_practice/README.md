@@ -121,3 +121,13 @@
    * 1/13(목)  입국심사[👉](./9_binary_search_1.md)
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43238)
+   * 1/14(금)  징검다리[👉](./9_binary_search_2.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43236)
+10. 그래프(graph)[🔗](https://programmers.co.kr/learn/courses/30/parts/14393)
+   * 1/17(월)  가장 먼 노드[👉](./10_graph_1.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49189)
+   * 1/18(화)  순위[👉](./10_graph_2.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49191)

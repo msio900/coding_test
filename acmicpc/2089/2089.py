@@ -1,14 +1,23 @@
 import sys
-from math import gcd
-from itertools import combinations
 
-t = int(sys.stdin.readline())
+N = int(sys.stdin.readline())
 
-for _ in range(t):
-    n_list = list(map(int, sys.stdin.readline().split()))
-    n = n_list.pop(0)
-    a = []
-    for i in combinations(n_list, 2):
-      a.append(gcd(i[0], i[1]))
-    print(sum(a))
+# -13   = -2 * (7)  +1
+# 7     = -2 * (-3) +1
+# -3    = -2 * (2)  +1
+# 2     = -2 * (-1) +0
+# -1    = -2 * (1)  +1
+# 1     = -2 * (0)  +1
 
+if not N:
+    sys.stdout.write('0')
+    exit()
+res = ''
+while N:
+    if N%(-2):
+        res = '1' + res
+        N = N//-2 + 1
+    else:
+        res = '0' + res
+        N //= -2
+print(res)

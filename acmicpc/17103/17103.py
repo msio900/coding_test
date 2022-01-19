@@ -1,23 +1,32 @@
 import sys
 
-N = int(sys.stdin.readline())
 
-# -13   = -2 * (7)  +1
-# 7     = -2 * (-3) +1
-# -3    = -2 * (2)  +1
-# 2     = -2 * (-1) +0
-# -1    = -2 * (1)  +1
-# 1     = -2 * (0)  +1
+def prime_list(n):      # 에라토스테네스의 체 함수
+    # 에라토스테네스의 체 초기화: n개 요소에 True 설정(소수로 간주)
+    sieve = [True] * n
 
-if not N:
-    sys.stdout.write('0')
-    exit()
-res = ''
-while N:
-    if N%(-2):
-        res = '1' + res
-        N = N//-2 + 1
-    else:
-        res = '0' + res
-        N = N//-2
-print(res)
+    # n의 최대 약수가 sqrt(n) 이하이므로 i=sqrt(n)까지 검사
+    m = int(n ** 0.5)
+    for i in range(2, m + 1):
+        if sieve[i] == True:           # i가 소수인 경우
+            for j in range(i+i, n, i): # i이후 i의 배수들을 False 판정
+                sieve[j] = False
+
+    # 소수 목록 산출
+    return [i for i in range(2, n) if sieve[i] == True]
+
+T = int(sys.stdin.readline())
+
+for _ in range(T):
+    N = int(sys.stdin.readline())
+    N_prime_list = prime_list(N)
+    print(N_prime_list)
+    answer = 0
+    for i, j in zip(reversed(range(1, N)), range(1, N)):
+        if i > N//2 - 1:
+            print(i, j)
+            if (i in N_prime_list) and (j in N_prime_list):
+                answer += 1
+
+    print(answer)
+

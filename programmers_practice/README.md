@@ -125,9 +125,15 @@
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43236)
 10. 그래프(graph)[🔗](https://programmers.co.kr/learn/courses/30/parts/14393)
-   * 1/17(월)  가장 먼 노드[👉](./10_graph_1.md)
 
-     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49189)
-   * 1/18(화)  순위[👉](./10_graph_2.md)
+       * 1/17(월)  가장 먼 노드[👉](./10_graph_1.md)
 
-     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49191)
+         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49189)
+
+       * 1/18(화)  순위[👉](./10_graph_2.md)
+
+         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49191)
+         
+       * 1/18(화)  방의 개수[👉](./10_graph_3.md)
+
+         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/49190)

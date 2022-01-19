@@ -17,14 +17,14 @@ def prime_list(n):      # 에라토스테네스의 체 함수
 
 T = int(sys.stdin.readline())
 
-for _ in range(T):
-    N = int(sys.stdin.readline())
-    N_prime_list = prime_list(N)
-    print(N_prime_list)
+nums = [int(sys.stdin.readline()) for _ in range(T)]
+N_prime_list = prime_list(max(nums))
+# print(N_prime_list)
+for num in nums:
     answer = 0
-    for i, j in zip(reversed(range(1, N)), range(1, N)):
-        if i > N//2 - 1:
-            print(i, j)
+    for i, j in zip(reversed(range(1, num)), range(1, num)):
+        if i > num//2 - 1:
+            # print(i, j)
             if (i in N_prime_list) and (j in N_prime_list):
                 answer += 1
 

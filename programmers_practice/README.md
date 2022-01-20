@@ -1,7 +1,41 @@
-# Programmers Codingtest Practice[↩](../../../)
+# 프로그래머스 : Programmers Codingtest Practice[↩](../../../)
 > 풀이 과정
 
-1. 해시
+## contents📑<a id='contents'></a>
+
+* 1회차
+  1. 해시[✏](#1_1)
+  2. 스택/큐[✏](#1_2)
+  3. 힙[✏](#1_3)
+  4. 정렬[✏](#1_4)
+  5. 완전탐색[✏](#1_5)
+  6. 탐욕법[✏](#1_6)
+  7. 동적계획법(Dynamic Programming)[✏](#1_7)
+  8. 깊이/너비 우선 탐색(DFS/BFS)[✏](#1_8)
+  9. 이분탐색(Binary Search)[✏](#1_9)
+  10. 그래프(graph)[✏](#1_10)
+* 2회차
+  1. 해시[✏](#2_1)
+
+
+
+## Challenge[📑](#contents)
+
+### 2회차[📑](#contents)<a id='2'></a>
+
+1. 해시[📑<a id='2_1'></a>](#contents)
+
+   * 12/1(수)  완주하지 못한 선수[👉](./2_1_hash_1.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42576)
+
+
+
+
+
+### 1회차[📑<a id='1'></a>](#contents)
+
+1. 해시[📑<a id='1_1'></a>](#contents)
     * 12/1(수)  완주하지 못한 선수[👉](./1_hash_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42576)
@@ -15,7 +49,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
-2. 스택/큐
+2. 스택/큐[📑](#contents)<a id='1_2'></a>
     * 🔳12/7(화)  기능개발[👉](./2_stack_queue_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
@@ -29,7 +63,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)
 
-3. 힙(Heap)
+3. 힙(Heap)[📑](#contents)<a id='1_3'></a>
     * 12/13(월)  더 맵게[👉](./3_heap_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42626)
@@ -40,7 +74,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42628)
 
-4. 정렬        
+4. 정렬[📑](#contents)<a id='1_4'></a>
     * 🔳12/16(목)  K번째수[👉](./4_sorting_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42748)
@@ -51,7 +85,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42747)
 
-5. 완전탐색
+5. 완전탐색[📑](#contents)<a id='1_5'></a>
     * 12/21(화)  모의고사[👉](./5_BFS_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
@@ -62,7 +96,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42842)
 
-6. 탐욕법(Greedy)
+6. 탐욕법(Greedy)[📑](#contents)<a id='1_6'></a>
     * 12/24(금)  체육복[👉](./6_greedy_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42862)
@@ -82,7 +116,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42884)
 
-7. 동적계획법(Dynamic Programming)
+7. 동적계획법(Dynamic Programming)[📑](#contents)<a id='1_7'></a>
     * 1/3(월)  N으로 표현[👉](./7_dynamic_programming_1.md)
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42895)
@@ -99,7 +133,7 @@
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42897)
 
-8. 깊이/너비 우선 탐색(DFS/BFS)
+8. 깊이/너비 우선 탐색(DFS/BFS)[📑](#contents)<a id='1_8'></a>
 
     * 1/7(금)  타겟 넘버[👉](./8_DFS_BFS_1.md)
 
@@ -108,7 +142,7 @@
     * 1/10(월)  네트워크[👉](./8_DFS_BFS_2.md)
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43162)
-      
+
     * 1/11(화)  단어 변환[👉](./8_DFS_BFS_3.md)
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43163)
@@ -116,7 +150,7 @@
 
       > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43164)
 
-9. 이분탐색(Binary Search)[🔗](https://programmers.co.kr/learn/courses/30/parts/12486)
+9. 이분탐색(Binary Search)[🔗](https://programmers.co.kr/learn/courses/30/parts/12486) | [📑](#contents)<a id='1_9'></a>
 
    * 1/13(목)  입국심사[👉](./9_binary_search_1.md)
 
@@ -124,7 +158,7 @@
    * 1/14(금)  징검다리[👉](./9_binary_search_2.md)
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/43236)
-10. 그래프(graph)[🔗](https://programmers.co.kr/learn/courses/30/parts/14393)
+10. 그래프(graph)[🔗](https://programmers.co.kr/learn/courses/30/parts/14393) | [📑<a id='1_10'></a>](#contents)
 
        * 1/17(월)  가장 먼 노드[👉](./10_graph_1.md)
 

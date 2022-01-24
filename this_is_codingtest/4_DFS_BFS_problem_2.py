@@ -1,11 +1,10 @@
 from collections import deque
+import sys
 
 # N, M을 공백을 기준으로 구분하여 입력 받기
-n, m = map(int, input().split())
+n, m = map(int, sys.stdin.readline().split())
 # 2차원 리스트의 맵 정보 입력 받기
-graph = []
-for i in range(n):
-    graph.append(list(map(int, input())))
+graph = [list(map(int, sys.stdin.readline().rstrip())) for i in range(n)]
 
 # 이동할 네 가지 방향 정의 (상, 하, 좌, 우)
 dx = [-1, 1, 0, 0]

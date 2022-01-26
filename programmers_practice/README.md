@@ -3,6 +3,8 @@
 
 ## contents📑<a id='contents'></a>
 
+* 2회차
+  1. 해시[✏](#2_1)
 * 1회차
   1. 해시[✏](#1_1)
   2. 스택/큐[✏](#1_2)
@@ -14,20 +16,24 @@
   8. 깊이/너비 우선 탐색(DFS/BFS)[✏](#1_8)
   9. 이분탐색(Binary Search)[✏](#1_9)
   10. 그래프(graph)[✏](#1_10)
-* 2회차
-  1. 해시[✏](#2_1)
-
-
 
 ## Challenge[📑](#contents)
 
 ### 2회차[📑](#contents)<a id='2'></a>
 
-1. 해시[📑<a id='2_1'></a>](#contents)
+1. 해시[🔗]https://programmers.co.kr/learn/courses/30/parts/12077) | [📑<a id='2_1'></a>](#contents)
 
-   * 12/1(수)  완주하지 못한 선수[👉](./2_1_hash_1.md)
+   * 1/20(목)  완주하지 못한 선수[👉](./2_1_hash_1.md)
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42576)
+     
+   * 1/25(화)  전화번호 목록[👉](./2_1_hash_2.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42577)
+   
+   * 1/26(수)  위장[👉](./2_1_hash_3.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42578)
 
 
 

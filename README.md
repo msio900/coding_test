@@ -8,7 +8,7 @@
 * Programmers Codingtest Practice[👉](./programmers_practice)   |   [출처🖥](https://programmers.co.kr/learn/challenges)
 * The people who studied with me[🤝](#people)
 * principle[📌](#principle)
-  * 류호석님 "코딩테스트 공부, 나는 잘 하고 있는걸까?"[👉](./ryu_1) 
+  * 류호석님 "코딩테스트 공부, 나는 잘 하고 있는걸까?"[👉](./1_ryu.md)
 
 * Summary[🖋️](#Summary)
   * 21.12.03. (금)[⭐](#21.12.03. (금))

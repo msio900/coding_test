@@ -1,16 +1,21 @@
 import sys
 
-# N : 진법을 바꾸고자 하는 수, B : 원하는 진법
-N, B = map(int, sys.stdin.readline().rstrip().split())
+A, B = map(int, sys.stdin.readline().split())
+m = int(sys.stdin.readline())
+# print(A, B)
+# print(m)
 
-num = []
-while N != 0:# !=0
-    if N % B < 10:
-        num.append(str(N % B))
-    else:
-        num.append(chr(55 + N % B))
-    N = N // B
+A_nums = list(map(int, sys.stdin.readline().split()))
 
-answer = ''.join(num[::-1])
+# print(A_nums)
+A_num = 0
+# 10진법으로 변환
+for i in range(m):
+    A_num += A_nums[i]*A**((m-1)-i)
 
-print(answer)
+B_nums = []
+while A_num != 0:
+    B_nums.append(str(A_num % B))
+    A_num = A_num // B
+
+print(' '.join(B_nums[::-1]))

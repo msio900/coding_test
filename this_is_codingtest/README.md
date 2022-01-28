@@ -5,9 +5,10 @@
 
 * Part2 : 주요 알고리즘 이론과 실전 문제
     * Chapter 3 : 그리디[👉](./3_greedy.md)
-    * Chapter 4 : DFS/BFS[👉](./4_DFS_BFS.md)
-      * 1/21(금) Q3 :음료수 얼려 먹기[✏](4_DFS_BFS_problem_1.md)
-      * 1/21(금) Q4 : 미로 탈출[✏](4_DFS_BFS_problem_2.md)
+    * Chapter 4 : 구현(Implementation)[👉](./4_impl.md)
+    * Chapter 5 : DFS/BFS[👉](./5_DFS_BFS.md)
+      * 1/21(금) Q3 :음료수 얼려 먹기[✏](5_DFS_BFS_problem_1.md)
+      * 1/21(금) Q4 : 미로 탈출[✏](5_DFS_BFS_problem_2.md)
 
 
 * Part3 : 알고리즘 유형별 기출문제

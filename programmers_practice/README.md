@@ -5,6 +5,7 @@
 
 * 2회차
   1. 해시[✏](#2_1)
+  1. 스택/큐[✏](#2_2)
 * 1회차
   1. 해시[✏](#1_1)
   2. 스택/큐[✏](#1_2)
@@ -21,7 +22,7 @@
 
 ### 2회차[📑](#contents)<a id='2'></a>
 
-1. 해시[🔗]https://programmers.co.kr/learn/courses/30/parts/12077) | [📑<a id='2_1'></a>](#contents)
+1. 해시[🔗](https://programmers.co.kr/learn/courses/30/parts/12077) | [📑<a id='2_1'></a>](#contents)
 
    * 1/20(목)  완주하지 못한 선수[👉](./2_1_hash_1.md)
 
@@ -34,6 +35,16 @@
    * 1/26(수)  위장[👉](./2_1_hash_3.md)
    
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42578)
+     
+   * 🔳1/27(목)  베스트앨범[👉](./2_1_hash_4.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42579)
+   
+2. 스택/큐[🔗](https://programmers.co.kr/learn/courses/30/parts/12081) | [📑](#contents)<a id='2_2'></a>
+
+   * 🔳2/3(목)  기능개발[👉](./2_2_stack_queue_1.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
 
 
 

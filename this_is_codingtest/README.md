@@ -7,6 +7,7 @@
     * Chapter 3 : 그리디[👉](./3_greedy.md)
     * Chapter 4 : 구현(Implementation)[👉](./4_impl.md)
       * 1/28(금) Q2 :왕실의 나이트[✏](4_impl_problem_1.md)
+      * 2/4(금) Q3 :게임 개발[✏](4_impl_problem_2.md)
     * Chapter 5 : DFS/BFS[👉](./5_DFS_BFS.md)
       * 1/21(금) Q3 :음료수 얼려 먹기[✏](5_DFS_BFS_problem_1.md)
       * 1/21(금) Q4 : 미로 탈출[✏](5_DFS_BFS_problem_2.md)

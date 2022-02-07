@@ -43,6 +43,8 @@ print(sorted(list, reverse=True))
 ```
 * 성공😊
   * 파이썬 기본 정렬 라이브러리 사용
+  * `join`을 쓰는 것을 까먹음
+  * 채원님 코멘트 : `join`을 쓰기보다는 `for문`으로 돌릴 것!
 
 #### 나동빈님 풀이[📌](https://github.com/ndb796/python-for-coding-test/blob/master/6/10.py)
 
@@ -62,6 +64,5 @@ array = sorted(array, reverse=True)
 for i in array:
     print(i, end=' ')
 ```
-
 
 * 

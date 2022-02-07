@@ -45,6 +45,10 @@
    * 🔳2/3(목)  기능개발[👉](./2_2_stack_queue_1.md)
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
+     
+   * 🔳2/8(화)  프린터[👉](./2_2_stack_queue_2.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42587)
 
 
 
@@ -71,7 +75,7 @@
       
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42586)
     * 🔳12/8(수)  프린터[👉](./2_stack_queue_2.md)
-      
+    
         > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42587)
     * 🔳12/9(목)  다리를 지나는 트럭[👉](./2_stack_queue_3.md)
       

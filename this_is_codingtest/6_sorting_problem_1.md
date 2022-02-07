@@ -32,10 +32,36 @@ out[0]
 
 ## 💡풀이
 ```python
+import sys
 
+N = int(sys.stdin.readline())
+list = []
+for _ in range(N):
+    list.append(int(sys.stdin.readline()))
+
+print(sorted(list, reverse=True))
 ```
-* 미완성
+* 성공😊
+  * 파이썬 기본 정렬 라이브러리 사용
 
-#### 나동빈님 풀이[📌](https://github.com/ndb796/python-for-coding-test/blob/master/5/10.py)
+#### 나동빈님 풀이[📌](https://github.com/ndb796/python-for-coding-test/blob/master/6/10.py)
+
+```python
+# N 입력 받기
+n = int(input())
+
+# N개의 정수를 입력 받아 리스트에 저장
+array = []
+for i in range(n):
+    array.append(int(input()))
+
+# 파이썬 정렬 라이브러리를 이용하여 내림차순 정렬 수행
+array = sorted(array, reverse=True)
+
+# 정렬이 수행된 결과를 출력
+for i in array:
+    print(i, end=' ')
+```
+
 
 * 

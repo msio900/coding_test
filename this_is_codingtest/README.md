@@ -13,6 +13,8 @@
       * 1/21(금) Q04 : 미로 탈출[✏](5_DFS_BFS_problem_2.md)
     * Chapter 6 :정렬 [👉](./6_sorting.md)
       * 2/7(월) Q02. 위에서 아래로[✏](6_sorting_problem_1.md)
+      * 2/11(금) Q03. 위에서 아래로[✏](6_sorting_problem_2.md)
+      * 2/11(금) Q04. 위에서 아래로[✏](6_sorting_problem_3.md)
 
 
 * Part3 : 알고리즘 유형별 기출문제

@@ -1,4 +1,4 @@
-# 프로그래머스 : Programmers Codingtest Practice[↩](../../../)
+# ⌨프로그래머스 : Programmers Codingtest Practice[↩](../../../)
 > 풀이 과정
 
 ## contents📑<a id='contents'></a>
@@ -49,6 +49,14 @@
    * 🔳2/8(화)  프린터[👉](./2_2_stack_queue_2.md)
    
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42587)
+     
+   * 🔳2/9(수) 다리를 지나는 트럭[👉](./2_2_stack_queue_3.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42583)
+   
+   * 2/10(목) 주식 가격[👉](./2_2_stack_queue_4.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)
 
 
 

@@ -1,12 +1,37 @@
+# import sys
+#
+# T = int(sys.stdin.readline())
+#
+# nums = []
+# for _ in range(T):
+#     nums.append(int(sys.stdin.readline()))
+
+# 1 = 1
+# 2 = 1 + 1 / 2
+# 3 = 1 + 1 + 1 / 1, 2 / 2, 1 / 3
+# 4 = 1,1,1,1 / 1,
+
 import sys
 
-n = int(sys.stdin.readline())
+read = sys.stdin.readline
 
-dp = [0] * 1001
-dp[1] = 1
-dp[2] = 2
 
-for i in range(3, 1001):
-    dp[i] = dp[i-1] + dp[i-2]
+def dfs(num):
+    if arr[num] > 0:
+        return arr[num]
+    if num == 1:
+        return 1
+    elif num == 2:
+        return 2
+    elif num == 3:
+        return 4
+    else:
+        arr[num] = dfs(num - 1) + dfs(num - 2) + dfs(num - 3)
+        return arr[num]
 
-print(dp[n] % 10007)
+
+T = int(sys.stdin.readline())
+for _ in range(T):
+    l = int(read())
+    arr = [0] * (l + 1)
+    print(dfs(l))

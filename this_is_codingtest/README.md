@@ -15,6 +15,7 @@
       * 2/7(월) Q02. 위에서 아래로[✏](6_sorting_problem_1.md)
       * 2/11(금) Q03. 성적이 낮은 순서로 학생 출력하기[✏](6_sorting_problem_2.md)
       * 2/11(금) Q04. 두 배열의 원소 교체[✏](6_sorting_problem_3.md)
+    * Chapter 7 : 이진탐색 [👉](./7_binary search.md)
 
 
 * Part3 : 알고리즘 유형별 기출문제

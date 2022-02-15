@@ -6,6 +6,7 @@
 * 2회차
   1. 해시[✏](#2_1)
   1. 스택/큐[✏](#2_2)
+  1. 힙[✏](#2_3)
 * 1회차
   1. 해시[✏](#1_1)
   2. 스택/큐[✏](#1_2)
@@ -57,6 +58,12 @@
    * 2/10(목) 주식 가격[👉](./2_2_stack_queue_4.md)
    
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42584)
+   
+3. 힙(Heap)[🔗](https://programmers.co.kr/learn/courses/30/parts/12117) | [📑](#contents)<a id='2_3'></a>
+
+   * 2/15(화)  더 맵게[👉](./2_3_heap_1.md)
+
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42626)
 
 
 

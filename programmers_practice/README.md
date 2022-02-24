@@ -64,6 +64,14 @@
    * 2/15(화)  더 맵게[👉](./2_3_heap_1.md)
 
      > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42626)
+     
+   * 🔳2/22(화)  디스크 컨트롤러[👉](./2_3_heap_2.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42627)
+   
+   * 🔳2/24(목)  이중우선순위큐[👉](./2_3_heap_3.md)
+   
+     > [문제📝](https://programmers.co.kr/learn/courses/30/lessons/42628)
 
 
 

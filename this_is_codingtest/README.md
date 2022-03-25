@@ -35,3 +35,5 @@
     * Chapter 13 : DFS/BFS 문제
       * 3/21(월) Q15 : 특정 거리의 도시 찾기[👉](./13_DFS_BFS_problem_1.md)
       * 12/22(목) Q16 : 연구소[👉](./13_DFS_BFS_problem_2.md)
+* Part3 : 알고리즘 유형별 기출문제
+    * Appendix A 코딩테스트를 위한 파이썬 문법[👉](A_python_grammar.md)

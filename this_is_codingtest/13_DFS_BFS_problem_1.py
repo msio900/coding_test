@@ -1,7 +1,37 @@
 import sys
+from collections import deque
 
-# 1~N번까지의 도시
-# M개의 단방향 도로(모든 도로의 거리는 1)
-# 특정 도시 X로부터 출발
-# 최단 거리가 K인 모든 도시들의 번호 출력하는 프로그램
+f = sys.stdin.readline
 
+N, M, K, X = map(int, f().split())
+print(N, M, K, X)
+graph = [[] for _ in range(N + 1)]
+distance = [0] * (N+1)
+visited = [False]*(N+1)
+
+for _ in range(M):
+    A, B = map(int, f().split())
+    graph[A].append(B)
+
+def bfs(start):
+    answer = []
+    q = deque([start])
+    visited[start] = True
+    distance[start] = 0
+    while q:
+        now = q.popleft()
+        for i in graph[now]:
+            if not visited[i]:
+                visited[i] = True
+                q.append(i)
+                distance[i] = distance[now] + 1
+                if distance[i] == k:
+                    answer.append(i)
+    if len(answer) ==0:
+        print(-1)
+    else:
+        answer.sort()
+        for i in answer:
+            print(i, end='\n')
+
+bfs(X)

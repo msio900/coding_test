@@ -34,3 +34,17 @@ READY
 ---
 
 ## 💡풀이
+```python
+import sys
+
+
+# 현재 캐릭터 점수 = N
+N = str(sys.stdin.readline().rstrip())
+
+# 1) 자릿 수를 기준으로 절반으로 나눔
+# 2) 오른쪽 값의 합과 왼쪽 값의 합이 같은지 확인함.
+if sum(list(map(int,N[:len(N)//2]))) == sum(map(int,list(N[len(N)//2:]))):
+    print("LUCKY") # 같을 경우, "LUCKY"
+else:
+    print("READY") # 다를 경우, "READY"
+```

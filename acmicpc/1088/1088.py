@@ -1,48 +1,31 @@
-# import sys
-#
-# # in[0]
-# # 2
-# # 1 3
-# # 1
-# # out[0]
-# # 0.5
-#
-# N = int(sys.stdin.readline())
-# cake_gram = list(map(int, sys.stdin.readline().split()))
-# M = int(sys.stdin.readline())
-#
-# dif = []
-# dif.append(float(max(cake_gram)-min(cake_gram)))
-# for _ in range(M):
-#     cake_gram.sort(reverse=True)
-#     a = cake_gram.pop(0)/2
-#     cake_gram.append(a)
-#     dif.append(float(max(cake_gram)-min(cake_gram)))
-# print(min(dif))
-
-# 류호석님 시간초과
 import sys
+def input():
+    return sys.stdin.readline().rstrip()
 
-si = sys.stdin.readline
-N = int(si())
-a = list(map(int, si().split()))
-a = [(x, 0)for x in a]
-M = int(si())
+N = int(input())
+arr = list(map(float,input().split()))
+origin = arr[:]
+cnt = [1 for _ in range(N)]
 
-ans = max(a)[0] - min(a)[0]
+answer = max(arr) - min(arr)
+M = int(input())
+while M:
+    max_val = 0
+    max_idx = -1
+    if not answer:
+        break
+    for i in range(N):
+        if arr[i] > max_val:
+            max_idx = i
+            max_val = arr[i]
+        elif arr[i] == max_val and cnt[max_idx] < cnt[i]:
+            max_idx = i
 
-for _ in range(M):
-    # 제일 큰 조각 찾기
-    sz, idx = a[0][0], 0
-    for i in range(1, N):
-        if sz < a[i][0]:
-            sz, idx = a[i][0], i
-
-    # 제일 큰 조각에 칼질 한 번 더 하기
-    org_sz = (a[idx][0] * (a[idx][1] + 1))  # 원래 사이즈 = 조각 크기 * 조각 개수(=자른 횟수 + 1)
-    a[idx] = (org_sz / (a[idx][1] + 2), a[idx][1] + 1)
-
-    # 정답 갱신
-    ans = min(ans, max(a)[0] - min(a)[0])
-print(float(ans))
+    origin_val =  origin[max_idx]
+    cnt[max_idx] += 1
+    now = origin_val/cnt[max_idx]
+    arr[max_idx] = now
+    answer = min(answer,max(arr)-min(arr))
+    M -= 1
+print(answer)
 

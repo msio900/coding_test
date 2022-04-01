@@ -10,7 +10,32 @@ import sys
 N = int(sys.stdin.readline())
 cake_gram = list(map(int, sys.stdin.readline().split()))
 M = int(sys.stdin.readline())
-print(cake_gram)
+
+dif = []
+dif.append(float(max(cake_gram)-min(cake_gram)))
 for _ in range(M):
     cake_gram.sort(reverse=True)
-    cake_gram.append(cake_gram.pop()/2)
+    a = cake_gram.pop(0)/2
+    cake_gram.append(a)
+    dif.append(float(max(cake_gram)-min(cake_gram)))
+print(min(dif))
+
+import sys
+
+si = sys.stdin.readline
+N = int(si())
+a = list(map(int, si().split()))
+a = [(x, 0)for x in a]
+M = int(si())
+
+ans = max(a)[0] - min(a)[0]
+
+for _ in range(M):
+    # 제일 큰 조각 찾기
+    sz, idx = a[0][0], 0
+    for i in range(1, N):
+        if sz < a[i][0]:
+            sz, idx = a[i][0], 1
+
+    # 제일 큰 조각에 칼질 한 번 더 하기
+    a[idx] = (a[idx][0] * (a[idx][1] + 1))

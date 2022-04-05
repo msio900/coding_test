@@ -28,7 +28,7 @@
 * Part3 : 알고리즘 유형별 기출문제
     * Chapter 11 : 그리디 문제
       * 4/4(월) Q01 : 모험가 길드[👉](./11_greedy_problem_1.md)
-      * 4/5(화) Q03 : 문자열 뒤집기[👉](./11_greedy_problem_2.md)
+      * 4/5(화) Q03 : 문자열 뒤집기[👉](./11_greedy_problem_3.md)
       * 12/20(월) Q04 : 만들 수 없는 금액[👉](./11_greedy_problem_4.md)
       
     * Chapter 12 : 구현 문제

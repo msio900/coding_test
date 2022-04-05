@@ -63,8 +63,13 @@ out[4]
 
 ## 💡풀이
 ```python
-
-
+change = 0
+prev = '?'
+string = input()
+for i in string:
+    if i != prev: change += 1
+    prev = i
+print(change//2)
 ```
 
 * 나동빈님 풀이

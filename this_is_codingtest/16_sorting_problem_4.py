@@ -1,16 +1,17 @@
-def solution(N, stages):
-    print(N, stages)
-    stages.sort()
-    answer = []
-    for i in range(len(stages)):
-        stage_user = []
-        if stages[i] == stages[i+1]:
-            stage_user.append(stages[i])
-        answer.append(stage_user)
-    print(answer)
-    return answer
+import sys
 
+input = sys.stdin.readline
 
-if __name__ == "__main__":
-    N, stages = [5, [2, 1, 2, 6, 2, 4, 3, 3]]
-    solution(N, stages)
+N = int(input())
+soldiers = list(map(int, input().split()))
+
+soldiers.reverse()
+
+dp = [1]*N
+
+for i in range(1, N):
+    for j in range(0, i):
+        if soldiers[j] < soldiers[i]:
+            dp[i] = max(dp[i], dp[j] + 1)
+
+print(N - max(dp))

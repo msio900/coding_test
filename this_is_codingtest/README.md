@@ -39,5 +39,7 @@
       * 3/28(월) Q25 : 실패율[👉](./14_sorting_problem_3.md)
     * Chapter 16 : 다이나믹 프로그래밍 문제
       * 4/8(금) Q25 : 병사 배치하기[👉](./16_sorting_problem_4.md)
+    * Chapter 17 : 최단 거리 문제
+      * 4/11(월) Q40 : 숨바꼭질[👉](./17_shorted_path_problem_4.md)
 * Part3 : 알고리즘 유형별 기출문제
     * Appendix A 코딩테스트를 위한 파이썬 문법[👉](A_python_grammar.md)

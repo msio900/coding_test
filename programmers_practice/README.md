@@ -21,6 +21,14 @@
 
 ## Challenge[📑](#contents)
 
+### Study explanation
+
+* 5/2(월) k진수에서 소수 개수 구하기[👉](./programmers_92335.md)
+
+  > 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92335)
+
+
+
 ### 2회차[📑](#contents)<a id='2'></a>
 
 1. 해시[🔗](https://programmers.co.kr/learn/courses/30/parts/12077) | [📑<a id='2_1'></a>](#contents)

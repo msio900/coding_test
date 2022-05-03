@@ -1,34 +1,33 @@
 import sys
 
+
+# 스택을 구현하는 문제
+input = sys.stdin.readline
+N = int(input())
+
 stack = []
-
-N=int(sys.stdin.readline())
-
 for _ in range(N):
-    word = sys.stdin.readline().split()
-    order = word[0]
-
-    if order == 'push':
-        stack.insert(0,word[1])
-
-    if order =='pop':
-        if len(stack) ==0:
+    order = input().split()
+    command = order[0].rstrip()
+    if len(order) == 2:
+        X = order[1].rstrip()
+    if command == 'push':
+       stack.append(X)
+    elif command == 'pop':
+        if len(stack) == 0:
             print(-1)
         else:
-            print(stack[0])
-            stack.pop(0)
-
-    if order =='size':
+            print(stack.pop())
+    elif command == 'size':
         print(len(stack))
-
-    if order == 'empty':
+    elif command == 'empty':
         if len(stack) == 0:
             print(1)
         else:
             print(0)
-
-    if order == 'top':
+    elif command == 'top':
         if len(stack) == 0:
             print(-1)
-        else :
-            print(stack[0])
+        else:
+            print(stack[-1])
+

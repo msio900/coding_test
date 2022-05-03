@@ -1,6 +1,9 @@
 # Baekjoon Online Judge[↩](../../../)
 > 풀이 과정
 
+5/3(월) 10828 : 스택[👉](./re_10828/re_10828.md)
+> [문제📝](https://www.acmicpc.net/problem/10828)
+
 4/19(화) 4355 : 서로소 [👉](./4355/4355.md)
 
 > [문제📝](https://www.acmicpc.net/problem/4355)

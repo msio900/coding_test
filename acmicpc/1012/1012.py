@@ -53,7 +53,7 @@
 #                 info[ny][nx] = 0
 #                 q.append((ny, nx))
 # t = int(input())
-#
+
 # dx = [0, 1, 0, -1]
 # dy = [-1, 0, 1, 0]
 #

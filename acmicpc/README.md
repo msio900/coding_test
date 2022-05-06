@@ -1,6 +1,10 @@
 # Baekjoon Online Judge[↩](../../../)
 > 풀이 과정
 
+5/6(금) 9012 : 괄호[👉](./re_9012/re_9012.md)
+
+> [문제📝](https://www.acmicpc.net/problem/9012)
+
 5/4(수) 9093 : 단어 뒤집기[👉](./re_9093/re_9093.md)
 
 > [문제📝](https://www.acmicpc.net/problem/9093)

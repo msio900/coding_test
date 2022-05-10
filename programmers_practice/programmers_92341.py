@@ -1,15 +1,6 @@
-# fees
-# fees[0] = 기본 시간(분)
-# fees[1] = 기본 요금(원)
-# fees[2] = 단위 시간(분)
-# fees[3] = 단위 요금(원)
-# records
-# 시각 차량번호 내역
 import math
 
-
 def solution(fees, records):
-    # print(fees, records)
     default_time = fees[0]
     default_fee = fees[1]
     unit_time = fees[2]
@@ -36,8 +27,8 @@ def solution(fees, records):
         for j in time_list:
             if str(i) == j[0]:
                 times += j[1]
-        if times <= default_time:
-            fee_list.append([i, 5000])
+        if times < default_time:
+            fee_list.append([i, default_fee])
         else:
             print(default_fee ,times , default_time,  unit_time, unit_fee)
             fee_list.append([i, default_fee + math.ceil((times - default_time) / unit_time) * unit_fee])

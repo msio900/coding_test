@@ -5,6 +5,8 @@
 # fees[3] = 단위 요금(원)
 # records
 # 시각 차량번호 내역
+import math
+
 
 def solution(fees, records):
     # print(fees, records)
@@ -12,21 +14,36 @@ def solution(fees, records):
     default_fee = fees[1]
     unit_time = fees[2]
     unit_fee = fees[3]
-    list = []
+    time_list = []
+    cars = []
     for i in range(len(records)):
+        list = []
         if records[i][11:] == 'IN':
             list.append([records[i][0:5], records[i][5:10], records[i][11:]])
             for j in range(i+1, len(records)):
                 if records[i][5:10] == records[j][5:10] and records[j][11:] == 'OUT':
                     list.append([records[j][0:5], records[j][5:10], records[j][11:]])
                     break
-    # print(list)
-    for i in range(len(list)):
-        if list[i][1] == 
-        print(list[i])
+            if list[-1][2] == 'IN':
+                list.append(['23:59', records[i][5:10], 'OUT'])
+            # print(list)
+            cars.append(records[i][6:10])
+            time_list.append([records[i][6:10], (int(list[1][0][:2])*60 + (int(list[1][0][3:])) - (int(list[0][0][:2])*60 + int(list[0][0][3:])))])
+    print(time_list)
+    fee_list=[]
+    for i in set(cars):
+        times = 0
+        for j in time_list:
+            if str(i) == j[0]:
+                times += j[1]
+        if times <= default_time:
+            fee_list.append([i, 5000])
+        else:
+            print(default_fee ,times , default_time,  unit_time, unit_fee)
+            fee_list.append([i, default_fee + math.ceil((times - default_time) / unit_time) * unit_fee])
 
-
-    answer = []
+    fee_list.sort()
+    answer = [i[1] for i in fee_list]
     return answer
 
 if __name__ == "__main__":

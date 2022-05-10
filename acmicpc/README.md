@@ -1,6 +1,14 @@
 # Baekjoon Online Judge[↩](../../../)
 > 풀이 과정
 
+5/10(화) 1406 : 에디터[👉](./re_1406/re_1406.md)
+
+> [문제📝](https://www.acmicpc.net/problem/1406)
+
+5/9(월) 1874 : 스택 수열[👉](./re_1874/re_1874.md)
+
+> [문제📝](https://www.acmicpc.net/problem/1874)
+
 5/6(금) 9012 : 괄호[👉](./re_9012/re_9012.md)
 
 > [문제📝](https://www.acmicpc.net/problem/9012)

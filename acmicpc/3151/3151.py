@@ -6,11 +6,11 @@ from itertools import combinations
 from typing import List
 
 
-# input = sys.stdin.readline
-#
-# N = int(input())
-#
-# A_list = list(map(int, input().split()))
+input = sys.stdin.readline
+
+N = int(input())
+
+A_list = list(map(int, input().split()))
 #
 # # cnt = 0
 # # for i in combinations(A_list, 3):
@@ -22,13 +22,18 @@ from typing import List
 #
 # print(A_list)
 
-numbers = [2, 7, 11, 15]
-target = 9
-def twoSum(self, numbers: list[int], target : int) -> List[int]:
+
+def twoSum(numbers : List[int], target : int) -> List[int]:
+    cnt_1 = 0
     for k, v in enumerate(numbers):
+        cnt_2 = 0
         left, right = k + 1, len(numbers) - 1
         expected = target - v
+        cnt_1 += 1
+        print('cnt_1', cnt_1)
         while left <= right:
+            cnt_2 += 1
+            print('cnt_2', cnt_2)
             mid = left +(right - left)//2
             if numbers[mid] < expected:
                 left = mid + 1
@@ -37,4 +42,4 @@ def twoSum(self, numbers: list[int], target : int) -> List[int]:
             else:
                 return k + 1, mid + 1
 
-print(twoSum(numbers, target))
+print(twoSum(A_list, 0))

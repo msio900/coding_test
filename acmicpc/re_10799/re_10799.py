@@ -6,17 +6,17 @@ input = sys.stdin.readline
 laser = str(input().strip())
 n = len(laser)
 
+cut_bar = laser.replace('()', '*')
+print(cut_bar)
+
 bar = []
-for i in range(n-1):
-    if laser[i] == '(' and laser[i+1] == ')':
-        bar.append(laser[i]+laser[i+1])#, end='')
-    if laser[i] == '(' and laser[i+1] == '(':
-        bar.append('-') #, end='')
-    if laser[i] == ')' and laser[i+1] == ')':
-        bar.append('-') #, end='')
-    if laser[i] == ')' and laser[i+1] == '(':
-        bar.append('-') #, end='')
-
-print(bar)
-
-
+answer = 0
+for i in cut_bar:
+    if i == '(':
+        bar.append(i)
+    if i == '*':
+        answer += len(bar)
+    if i == ')':
+        bar.pop()
+        answer += 1
+print(answer)

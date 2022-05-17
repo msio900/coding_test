@@ -1,11 +1,22 @@
 import sys
 
-input = str(sys.stdin.readline().strip())
-cut = 0
-for i in range(len(input)-1):
-    if (input[i] == '(') & (input[i+1] == ')'):
-        cut += 1
-        print(f'절단 {cut}회')
-    elif (input[i] == '(') & (input[i+1] == '('):
-        cut += 1
-        print(f'절단 {cut}회')
+
+input = sys.stdin.readline
+
+laser = str(input().strip())
+n = len(laser)
+
+bar = []
+for i in range(n-1):
+    if laser[i] == '(' and laser[i+1] == ')':
+        bar.append(laser[i]+laser[i+1])#, end='')
+    if laser[i] == '(' and laser[i+1] == '(':
+        bar.append('-') #, end='')
+    if laser[i] == ')' and laser[i+1] == ')':
+        bar.append('-') #, end='')
+    if laser[i] == ')' and laser[i+1] == '(':
+        bar.append('-') #, end='')
+
+print(bar)
+
+

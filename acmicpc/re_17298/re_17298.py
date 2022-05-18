@@ -1,9 +1,9 @@
-# import sys
-#
-# input = sys.stdin.readline
-#
-# N = int(input())
-# nums = list(map(int, input().split()))
+import sys
+
+input = sys.stdin.readline
+
+N = int(input())
+nums = list(map(int, input().split()))
 
 ## 이중 반복문 - 시간초과
 # for i in range(len(nums)-1):

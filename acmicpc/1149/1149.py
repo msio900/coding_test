@@ -9,10 +9,16 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
+
 answer = 0
-for _ in range(n):
+costs = list(map(int, input().split()))
+# print(costs, costs.index(min(costs)))
+k = costs.index(min(costs))
+answer += min(costs)
+for _ in range(1, n):
     costs = list(map(int, input().split()))
-    print(costs, costs.index(min(costs)))
+    costs[k] = 1001
+    # print(costs, costs.index(min(costs)))
     k = costs.index(min(costs))
     answer += min(costs)
 

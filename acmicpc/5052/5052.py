@@ -2,11 +2,20 @@ import sys
 
 input = sys.stdin.readline
 
-str_arr = input().rstrip()
-# print(ord('a'))
-answer = [-1]*(ord('z') - ord('a') + 1)
+# t : 테스트 케이스
+t = int(input())
 
-for i in reversed(range(len(str_arr))):
-    answer[ord(str_arr[i])-97] = i
-
-print(*answer)
+for _ in range(t):
+    # n : 전화번호의 수
+    n = int(input())
+    num_list = [input().rstrip() for i in range(n)]
+    # print(num_list)
+    bool = True
+    for i in range(n):
+        for j in range(i + 1, n):
+            if num_list[i] == num_list[j][:len(num_list[i])]:
+                bool = False
+                print('NO')
+                break
+    if bool:
+        print('YES')

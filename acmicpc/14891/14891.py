@@ -2,14 +2,12 @@ import sys
 
 input = sys.stdin.readline
 
-S  = input().rstrip()
+T1 = input()
+T2 = input()
+T3 = input()
+T4 = input()
 
-array = []
-for i in range(len(S)):
-    array.append(S[i:])
-
-array.sort()
-# print(array)
-for i in array:
-    print(i)
-
+K = int(input())
+for _ in range(K):
+    n = input().split()
+    print(n)

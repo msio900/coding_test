@@ -21,16 +21,13 @@
 
 ## Challenge[📑](#contents)
 
-### Study explanation
+### Study🖋
 
-* 5/9(월) 주차 요금 계산[👉](./programmers_92341.md)
+* 5/27(금) 양과 늑대[👉](././programmers_92343.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92343)
 
-  > 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92341)
+* 5/9(월) 주차 요금 계산[👉](./programmers_92341.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92341)
 
-
-* 5/2(월) k진수에서 소수 개수 구하기[👉](./programmers_92335.md)
-
-  > 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92335)
+* 5/2(월) k진수에서 소수 개수 구하기[👉](./programmers_92335.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92335)
 
 
 

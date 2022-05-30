@@ -1,13 +1,15 @@
 import sys
 
-N = int(sys.stdin.readline())
-list = list(map(int, sys.stdin.readline().split()))
+input = sys.stdin.readline
+
+N = int(input())
+list = list(map(int, input().split()))
 answer = N
 
 for i in list:
     if i != 1:
         for j in range(2, i):
-            print(f'{i} / {j} = {i % j}')
+            # print(f'{i} / {j} = {i % j}')
             if i % j == 0:
                 answer -= 1
                 break

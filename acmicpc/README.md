@@ -2,6 +2,10 @@
 
 >  코테문제 풀이 최근 순으로 
 
+5/20(월)
+* 10430 : 나머지 [👉](./re_10430/re_10430.md) | [문제📝](https://www.acmicpc.net/problem/10430)
+* 2609 : 최대공약수와 최소공배수 [👉](./re_2609/re_2609.md) | [문제📝](https://www.acmicpc.net/problem/2609)
+
 5/27(금) 
 * 14891 : 톱니바퀴 [👉](./14891/14891.md) | [문제📝](https://www.acmicpc.net/problem/14891)
 * 11656 : 접미사 배열 [👉](./re_11656/re_11656.md) | [문제📝](https://www.acmicpc.net/problem/11656)

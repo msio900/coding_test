@@ -2,18 +2,20 @@ import sys
 
 input = sys.stdin.readline
 
-N = int(input())
-list = list(map(int, input().split()))
-answer = N
+# 2를 곱한다.
+# 1을 수의 가장 오른쪽에 추가한다.
 
-for i in list:
-    if i != 1:
-        for j in range(2, i):
-            # print(f'{i} / {j} = {i % j}')
-            if i % j == 0:
-                answer -= 1
-                break
-
-    else:
-        answer -= 1
-print(answer)
+A, B = map(int, input().split())
+cnt = 1
+while B != A:
+    cnt += 1
+    temp = B
+    if B % 10 == 1:
+        B //= 10
+    elif B % 2 == 0:
+        B//=2
+    if temp == B:
+        print(-1)
+        break
+else:
+    print(cnt)

@@ -4,7 +4,7 @@
 
 6/1(수)
 * 1929 : 소수 구하기 [👉](./re_1929/re_1929.md) | [문제📝](https://www.acmicpc.net/problem/1929)
-* 11478 : 서로 다른 부분 문자열의 개수 [👉](./re_11478/re_11478.md) | [문제📝](https://www.acmicpc.net/problem/11478)
+* 11478 : 서로 다른 부분 문자열의 개수 [👉](./11478/11478.md) | [문제📝](https://www.acmicpc.net/problem/11478)
 
 5/31(화)
 * 1934 : 최소공배수 [👉](./re_1934/re_1934.md) | [문제📝](https://www.acmicpc.net/problem/1934)

@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/2(목)
+* 6588 : 골드바흐의 추측 [👉](./re_6588/re_6588.md) | [문제📝](https://www.acmicpc.net/problem/6588)
+
 6/1(수)
 * 1929 : 소수 구하기 [👉](./re_1929/re_1929.md) | [문제📝](https://www.acmicpc.net/problem/1929)
 * 11478 : 서로 다른 부분 문자열의 개수 [👉](./11478/11478.md) | [문제📝](https://www.acmicpc.net/problem/11478)

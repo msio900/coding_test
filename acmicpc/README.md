@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/3(금)
+* 10872 : 팩토리얼 [👉](./re_10872/re_10872.md) | [문제📝](https://www.acmicpc.net/problem/10872)
+
 6/2(목)
 * 6588 : 골드바흐의 추측 [👉](./re_6588/re_6588.md) | [문제📝](https://www.acmicpc.net/problem/6588)
 

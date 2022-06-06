@@ -2,8 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
-6/3(금)
+6/6(월)
 * 1676 : 팩토리얼 0의 개수 [👉](./re_1676/re_1676.md) | [문제📝](https://www.acmicpc.net/problem/1676)
+* 14889 : 스타트와 링크 [👉](./14889/14889.md) | [문제📝](https://www.acmicpc.net/problem/14889)
 
 6/3(금)
 * 10872 : 팩토리얼 [👉](./re_10872/re_10872.md) | [문제📝](https://www.acmicpc.net/problem/10872)

@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/7(화)
+* 2004 : 조합 0의 개수 [👉](./re_2004/re_2004.md) | [문제📝](https://www.acmicpc.net/problem/2004)
+
 6/6(월)
 * 1676 : 팩토리얼 0의 개수 [👉](./re_1676/re_1676.md) | [문제📝](https://www.acmicpc.net/problem/1676)
 * 14889 : 스타트와 링크 [👉](./14889/14889.md) | [문제📝](https://www.acmicpc.net/problem/14889)

@@ -1,14 +1,20 @@
+# N : 숨바꼭질을 함께하는 동생 수
+# S : 수빈이가 현재 있는 위치
+# 동생은 A1, A2, A3...An에 있음
+
 import sys
 from math import gcd
-from itertools import combinations
 
-t = int(sys.stdin.readline())
+input = sys.stdin.readline
 
-for _ in range(t):
-    n_list = list(map(int, sys.stdin.readline().split()))
-    n = n_list.pop(0)
-    a = []
-    for i in combinations(n_list, 2):
-      a.append(gcd(i[0], i[1]))
-    print(sum(a))
+n, s = map(int, input().split())
+brothers_position = list(map(int, input().split()))
+if n != 1:
+    ans = [gcd(abs(brothers_position[0] - s), abs(brothers_position[1] - s))]
+    for i in range(2, n-1):
+        ans[0] = gcd(ans[0], abs(brothers_position[i] - s))
+else:
+    ans = [abs(brothers_position[0]-s)]
 
+
+print(*ans)

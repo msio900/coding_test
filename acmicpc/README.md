@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/9(목)
+* 17087 : 숨바꼭질 6 [👉](./re_17087/re_17087.md) | [문제📝](https://www.acmicpc.net/problem/17087)
+* 12015: 가장 긴 증가하는 부분 수열 2 [👉](./12015/12015.md) | [문제📝](https://www.acmicpc.net/problem/12015)
 6/8(수)
 * 9613 : GCD 합 [👉](./re_9613/re_9613.md) | [문제📝](https://www.acmicpc.net/problem/9613)
 

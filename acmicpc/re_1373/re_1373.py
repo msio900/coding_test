@@ -1,14 +1,20 @@
 import sys
-from math import gcd
-from itertools import combinations
+import string
 
-t = int(sys.stdin.readline())
+input = sys.stdin.readline
 
-for _ in range(t):
-    n_list = list(map(int, sys.stdin.readline().split()))
-    n = n_list.pop(0)
-    a = []
-    for i in combinations(n_list, 2):
-      a.append(gcd(i[0], i[1]))
-    print(sum(a))
+num = oct(int(input(), 2))[2:] #.rstrip()
+# to_ten = 0
+# for i, k in enumerate(num):
+#     # print((len(num) - i - 1), int(k))
+#     to_ten += 2**(len(num) - i - 1) * int(k)
+#
+# answer = ''
+# while to_ten != 0:
+#     answer += str(to_ten % 8)
+#     to_ten //= 8
+#
+# print(answer[::-1])
 
+
+print(num)

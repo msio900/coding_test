@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/13(월)
+* 1212 : 8진수 2진수 [👉](./re_1212/re_1212.md) | [문제📝](https://www.acmicpc.net/problem/1212)
+
 6/10(금)
 * 1373 : 2진수 8진수 [👉](./re_1373/re_1373.md) | [문제📝](https://www.acmicpc.net/problem/1373)
 * ✔ 6118 : 숨바꼭질 [👉](./6118/6118.md) | [문제📝](https://www.acmicpc.net/problem/6118)

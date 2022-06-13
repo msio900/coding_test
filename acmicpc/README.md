@@ -4,6 +4,8 @@
 
 6/13(월)
 * 1212 : 8진수 2진수 [👉](./re_1212/re_1212.md) | [문제📝](https://www.acmicpc.net/problem/1212)
+* 9019 : DSLR [👉](./9019/9019.md) | [문제📝](https://www.acmicpc.net/problem/9019)
+
 
 6/10(금)
 * 1373 : 2진수 8진수 [👉](./re_1373/re_1373.md) | [문제📝](https://www.acmicpc.net/problem/1373)

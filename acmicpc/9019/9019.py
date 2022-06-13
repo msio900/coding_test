@@ -6,18 +6,18 @@
 # R: R 은 n의 각 자릿수를 오른편으로 회전시켜 그 결과를 레지스터에 저장한다.
 # 이 연산이 끝나면 레지스터에 저장된 네 자릿수는 왼편부터 d4, d1, d2, d3이 된다.
 
-import sys
-
-input = sys.stdin.readline
-
-t = int(input())
-
-for _ in range(t):
-    a, b = input().split()
-
-
-
-    print(a, b)
+# import sys
+#
+# input = sys.stdin.readline
+#
+# t = int(input())
+#
+# for _ in range(t):
+#     a, b = input().split()
+#
+#
+#
+#     print(a, b)
 
 from collections import deque
 import sys

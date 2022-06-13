@@ -22,12 +22,14 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+* 6/13(월) 신규 아이디 추천[👉](./programmers_72410.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72410)
 
 * 5/27(금) 양과 늑대[👉](././programmers_92343.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92343)
 
 * 5/9(월) 주차 요금 계산[👉](./programmers_92341.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92341)
 
 * 5/2(월) k진수에서 소수 개수 구하기[👉](./programmers_92335.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92335)
+
 
 
 

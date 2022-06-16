@@ -22,6 +22,8 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+* 6/16(목) 오픈채팅방[👉](./programmers_42888.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42888)
+
 * 6/13(월) 신규 아이디 추천[👉](./programmers_72410.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72410)
 
 * 5/27(금) 양과 늑대[👉](././programmers_92343.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92343)

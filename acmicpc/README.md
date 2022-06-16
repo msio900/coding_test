@@ -2,6 +2,9 @@
 
 >  코테문제 풀이 최근 순으로 
 
+6/17(금)
+* 2745 : 진법 변환 [👉](./re_2745/re_2745.md) | [문제📝](https://www.acmicpc.net/problem/2745)
+
 6/16(목)
 * 11005 : 진법 변환 2 [👉](./re_11005/re_11005.md) | [문제📝](https://www.acmicpc.net/problem/11005)
 

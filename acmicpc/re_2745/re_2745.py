@@ -14,7 +14,8 @@ for i in n:
 print(num)
 answer = 0
 for i in range(len(num)):
-    print(f'{num[len(num)-i-1]}*{int(b)}**{i}')
+    print(f'{num[i]}*{int(b)}**{i} 전')
+    print(f'{num[len(num)-i-1]}*{int(b)}**{i} 후')
     answer += num[len(num)-i-1]*int(b)**i
 print(answer)
 

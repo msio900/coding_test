@@ -1,25 +1,21 @@
-# import sys
-#
-# A, B = map(int, sys.stdin.readline().split())
-# m = int(sys.stdin.readline())
-# # print(A, B)
-# # print(m)
-#
-# A_nums = list(map(int, sys.stdin.readline().split()))
-#
-# # print(A_nums)
-# A_num = 0
-# # 10진법으로 변환
-# for i in range(m):
-#     A_num += A_nums[i]*A**((m-1)-i)
-#
-# B_nums = []
-# while A_num != 0:
-#     B_nums.append(str(A_num % B))
-#     A_num = A_num // B
-#
-# print(' '.join(B_nums[::-1]))
+import sys
 
+input = sys.stdin.readline
 
-for i in range(2, 10):
-    print(i)
+a, b = map(int, input().split())
+m = int(input())
+num = list(map(int, input().split()))
+print(num)
+
+# 2*17**1 + 16*17**0
+to_ten = 0
+for i in range(m):
+    to_ten += num[i]*a**(m - i - 1)
+
+print(to_ten)
+answer = []
+while to_ten != 0:
+    c, d = divmod(to_ten, b)
+    to_ten = c
+    answer.append(str(d))
+print(' '.join(answer[::-1]))

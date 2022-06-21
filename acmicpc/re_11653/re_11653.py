@@ -1,10 +1,12 @@
 import sys
 
-N = int(sys.stdin.readline())
+input = sys.stdin.readline
 
-while N != 1:
-    for i in range(2, N+1):
-        if N % i == 0:
+n = int(input())
+
+while n != 1 :
+    for i in range(2, n + 1):
+        if n % i == 0:
+            n = n //i
             print(i)
-            N = N // i
             break

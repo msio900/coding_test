@@ -22,7 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
-* 6/27(월) **2회차**신규 아이디 추천[👉](./programmers_72410.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72410)
+* 6/29(수) 숫자 문자열과 영단어[👉](./programmers_81301.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/81301)
+
+* 6/28(화) **2회차**신규 아이디 추천[👉](./programmers_72410.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72410)
 
 * 6/27(월) 신고 결과 받기[👉](./programmers_92334.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/92334)
 

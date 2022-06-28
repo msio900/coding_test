@@ -3,7 +3,7 @@
 >  코테문제 풀이 최근 순으로 
 
 6/28(화)
-* 12865 : 평범한 배낭 [👉](./12865/12865.md) | [문제📝](https://www.acmicpc.net/problem/12865)
+* ✔ 12865 : 평범한 배낭 [👉](./12865/12865.md) | [문제📝](https://www.acmicpc.net/problem/12865)
 
 6/24(금)
 * 11727 : 2×n 타일링 2 [👉](./re_11727/re_11727.md) | [문제📝](https://www.acmicpc.net/problem/11727)

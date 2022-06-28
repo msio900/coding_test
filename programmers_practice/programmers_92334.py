@@ -1,19 +1,32 @@
-def solution(record):
-    id_nickname = dict()
-    for i in record:
-        if i.split()[0] == 'Enter':
-            id_nickname[i.split()[1]] = i.split()[2]
-        if i.split()[0] == 'Change':
-            id_nickname[i.split()[1]] = i.split()[2]
+from collections import defaultdict
 
-    answer = []
-    for i in record:
-        if i.split()[0] == 'Enter':
-            answer.append(f'{id_nickname[i.split()[1]]}님이 들어왔습니다.')
-        if i.split()[0] == 'Leave':
-            answer.append(f'{id_nickname[i.split()[1]]}님이 나갔습니다.')
+def solution(id_list, report, k):
+    report = list(set(report))
+    reported_num = {}
+    reporting_num = {}
+    for id in id_list:
+        reported_num[id] = 0
+        reporting_num[id] = 0
+    for i in report:
+        reported_num[i.split()[1]] += 1
+    # print(reported_num.values())
+    reported_id = []
+    for id in reported_num:
+        if reported_num[id] >= k:
+            reported_id.append(id)
+
+    for id in report:
+        if id.split()[1] in reported_id:
+            reporting_num[id.split()[0]] += 1
+    # print(reporting_num)
+    answer = list(reporting_num.values())
+
+
+
     return answer
 
 if __name__ == '__main__':
-    record = ["Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"]
-    print(solution(record))
+    id_list, report, k, result = ["muzi", "frodo", "apeach", "neo"], ["muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"], 2, [2, 1, 1, 0]
+    print(solution(id_list, report, k))
+    id_list, report, k, result = ["con", "ryan"], ["ryan con", "ryan con", "ryan con", "ryan con"], 3, [0,0]
+    print(solution(id_list, report, k))

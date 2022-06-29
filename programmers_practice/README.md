@@ -22,6 +22,8 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+* 6/30(목) 키패드 누르기[👉](./programmers_67256.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/67256)
+
 * 6/29(수) 숫자 문자열과 영단어[👉](./programmers_81301.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/81301)
 
 * 6/28(화) **2회차**신규 아이디 추천[👉](./programmers_72410.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72410)

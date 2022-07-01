@@ -1,29 +1,33 @@
-def solution(numbers, hand):
-    answer = ''
-    keypad = [[1,2,3],
-              [4,5,6],
-              [7,8,9],
-              ['*', 0, '#']]
-    pre_L = 0
-    pre_R = 0
-    print(keypad[0].index(1))
-    for i in numbers:
-        if i in [1, 4, 7]:
-            answer += 'L'
-            pre_L = i
-        if i in [3, 6, 9]:
-            answer += 'R'
-            pre_R = i
-        # if i in [2, 5, 8, 0]:
-
-
-
+def solution(board, moves):
+    n = len(board)
+    for i in board:
+        print(i)
+    doll_arr = []
+    ans_arr = []
+    for i in moves:
+        depth = 0
+        while True:
+            if board[len(board)-1][i - 1] == 0:
+                break
+            doll = board[depth][i - 1]
+            if doll != 0:
+                doll_arr.append(board[depth][i - 1])
+                board[depth][i - 1] = 0
+                break
+            if len(doll_arr) > 2:
+                print(doll_arr)
+                while doll_arr[-1] != doll_arr[-2]:
+                    print(doll_arr)
+                    ans_arr.append(doll_arr.pop())
+                    ans_arr.append(doll_arr.pop())
+            depth +=1
+    print('변화 후')
+    for i in board:
+        print(i)
+    print(ans_arr)
+    answer = len(ans_arr)
     return answer
 
 if __name__ == '__main__':
-    numbers, hand = [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5],	"right"
-    print(solution(numbers, hand))
-    numbers, hand = [7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2],	"left"
-    print(solution(numbers, hand))
-    numbers, hand = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],	"right"
-    print(solution(numbers, hand))
+    board, moves = [[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]],[1,5,3,5,1,2,1,4]
+    print(solution(board, moves))

@@ -22,6 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+* 7/5(화) 
+  * 모의고사[👉](./programmers_42840.md) | 코드[⌨](./programmers_42840.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
+
 * 7/4(월) 
   * K번째수[👉](./programmers_42748.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42748) | 코드[⌨](./programmers_42748.py)
   * 순위 검색[👉](./programmers_72412.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72412) | 코드[⌨](./programmers_72412.py)

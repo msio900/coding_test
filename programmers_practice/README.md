@@ -22,16 +22,19 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
-* 7/5(화) 
-  * 모의고사[👉](./programmers_42840.md) | 코드[⌨](./programmers_42840.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
+7/6(수)
+ * 체육복[👉](./programmers_42862.md) | 코드[⌨](./programmers_42862.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
-* 7/4(월) 
-  * K번째수[👉](./programmers_42748.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42748) | 코드[⌨](./programmers_42748.py)
-  * 순위 검색[👉](./programmers_72412.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72412) | 코드[⌨](./programmers_72412.py)
+7/5(화) 
+ * 모의고사[👉](./programmers_42840.md) | 코드[⌨](./programmers_42840.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
-* 7/1(금) 
-  * 크레인 인형뽑기 게임[👉](./programmers_64061.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/64061)
-  * 메뉴 리뉴얼[👉](./programmers_72411.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72411)
+7/4(월) 
+ * K번째수[👉](./programmers_42748.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42748) | 코드[⌨](./programmers_42748.py)
+ * 순위 검색[👉](./programmers_72412.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72412) | 코드[⌨](./programmers_72412.py)
+
+7/1(금) 
+ * 크레인 인형뽑기 게임[👉](./programmers_64061.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/64061)
+ * 메뉴 리뉴얼[👉](./programmers_72411.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72411)
 
 * 6/30(목) 키패드 누르기[👉](./programmers_67256.md) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/67256)
 

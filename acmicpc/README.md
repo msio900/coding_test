@@ -1,6 +1,10 @@
 # Baekjoon Online Judge[↩](../../../)
 
->  코테문제 풀이 최근 순으로 
+>  코테문제 풀이 최근 순으로
+
+7/5(화)
+* 11401 : 이항 계수 3 [👉](./11401/11401.md) | [문제📝](https://www.acmicpc.net/problem/11401)
+
 
 6/29(수)
 * 1655 : 평범한 배낭 [👉](./1655/1655.md) | [문제📝](https://www.acmicpc.net/problem/1655)

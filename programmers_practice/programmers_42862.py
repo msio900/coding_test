@@ -1,26 +1,21 @@
-def solution(answers):
-    one_supo = [1, 2, 3, 4, 5]*(len(answers)//5+1)
-    two_supo = [2, 1, 2, 3, 2, 4, 2, 5]*(len(answers)//8+1)
-    three_supo = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]*(len(answers)//10+1)
-    each_cnt = [0,0,0]
-    print(one_supo, two_supo, three_supo)
-    for i in range(len(answers)):
-        if one_supo[i] == answers[i]:
-            each_cnt[0] +=1
-        if two_supo[i] == answers[i]:
-            each_cnt[1] +=1
-        if three_supo[i] == answers[i]:
-            each_cnt[2] +=1
-    print(each_cnt)
+def solution(n, lost, reserve):
+    students = [i for i in range(1, n+1) if i not in lost]
 
-    answer = []
-    for k, v in enumerate(each_cnt):
-        if v == max(each_cnt):
-            answer.append(k + 1)
+    for i in lost:
+        if i in reserve:
+            students.append(reserve.pop(reserve.index(i)))
+        elif (i - 1) in reserve:
+            students.append(reserve.pop(reserve.index(i - 1)))
+        elif (i + 1) in reserve:
+            students.append(reserve.pop(reserve.index(i + 1)))
+
+    answer = len(students)
     return answer
 
 if __name__ == '__main__':
-    answers = [1,2,3,4,5]
-    print(solution(answers))
-    answers = [1,3,2,4,2]
-    print(solution(answers))
+    n, lost, reserve = 6, [2, 4, 6], [1, 2]
+    print(solution(n, lost, reserve))
+    n, lost, reserve = 5, [2, 4], [3]
+    print(solution(n, lost, reserve))
+    n, lost, reserve = 3, [3], [1]
+    print(solution(n, lost, reserve))

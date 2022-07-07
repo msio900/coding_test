@@ -23,6 +23,9 @@
 
 ### Study🖋
 7/6(수)
+ * 실패율[👉](./programmers_42889.md) | 코드[⌨](./programmers_42889.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42889)
+
+7/6(수)
  * 체육복[👉](./programmers_42862.md) | 코드[⌨](./programmers_42862.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
 7/5(화) 

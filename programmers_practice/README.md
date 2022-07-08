@@ -24,11 +24,10 @@
 ### Study🖋
 
 7/8(금)
-
 * 2016년[👉](./programmers_12901.md) | 코드[⌨](./programmers_12901.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12901)
+* 합승 택시 요금[👉](./programmers_72413.md) | 코드[⌨](./programmers_72413.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/72413)
 
 7/7(목)
-
  * 실패율[👉](./programmers_42889.md) | 코드[⌨](./programmers_42889.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/42889)
 
 7/6(수)

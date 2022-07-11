@@ -1,7 +1,14 @@
 def solution(s):
-    answer = ''
+    n = len(s)
+    if n % 2 == 0:
+        answer = s[n//2 - 1:(n//2)+1]
+    else:
+        answer = s[n//2]
     return answer
 
 if __name__ == '__main__':
-    a, b = 5, 24
-    print(solution(a, b))
+    s = "abcde"
+    print(solution(s))
+    s = "qwer"
+    print(solution(s))
+

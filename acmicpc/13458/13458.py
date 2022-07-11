@@ -2,14 +2,10 @@ import sys
 
 input = sys.stdin.readline
 
+
 n = int(input())
+a = list(map(int, input().split()))
+b, c = map(int, input().split())
 
-mod = 1000000
-fibo = [0, 1]
-p = mod//10*15
+print(a, b, c)
 
-for i in range(2,p):
-    fibo.append(fibo[i-1]+fibo[i-2])
-    fibo[i] %= mod
-
-print(fibo[n%p])

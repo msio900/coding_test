@@ -22,6 +22,8 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+7/13(수)
+* 두 정수 사이의 합[👉](./programmers_12912.md) | 코드[⌨](./programmers_12912.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
 7/12(화)
 * 나누어 떨어지는 숫자 배열[👉](./programmers_12910.md) | 코드[⌨](./programmers_12910.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12910)

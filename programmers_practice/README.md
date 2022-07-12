@@ -23,6 +23,9 @@
 
 ### Study🖋
 
+7/12(화)
+* 나누어 떨어지는 숫자 배열[👉](./programmers_12910.md) | 코드[⌨](./programmers_12910.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12910)
+
 7/11(월)
 * 가운데 글자 가져오기[👉](./programmers_12903.md) | 코드[⌨](./programmers_12903.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12903)
 

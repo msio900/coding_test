@@ -34,20 +34,36 @@ def solution(a, b):
 * 채점 결과
 
 ```python
-
+def solution(a, b):
+    answer = 0
+    if a > b:
+        for i in range(b, a + 1):
+            answer += i
+    elif a == b:
+        answer = a
+    else:
+        for i in range(a, b+1):
+            answer += i
+    return answer
 ```
 
 ### 성공😂
-- 
+- a와 b 중 큰 수를 확인한 후 for 반복문을 이용하여 더해 줌.
 
 ## 다른 풀이
 
+> 정화님 풀이
 ```python
+def sum_gauss(n):
+    return int(n*(n+1)/2)
 
+def solution(a, b):
+    answer = 0
+    
+    if a >= b:
+        answer = sum_gauss(a) - sum_gauss(b-1)
+    else:
+        answer = sum_gauss(b) - sum_gauss(a-1)
+        
+    return answer
 ```
-## 성공😊
-```python
-
-```
-
-월 - 11

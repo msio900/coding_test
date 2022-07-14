@@ -22,6 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+7/15(금)
+* 문자열 내림차순으로 배치하기[👉](./programmers_12917.md) | 코드[⌨](./programmers_12917.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12917)
+
 7/13(수)
 * 두 정수 사이의 합[👉](./programmers_12912.md) | 코드[⌨](./programmers_12912.py) | 문제[📝](https://programmers.co.kr/learn/courses/30/lessons/12912)
 

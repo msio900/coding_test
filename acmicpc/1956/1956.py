@@ -1,39 +1,42 @@
+import heapq
 import sys
 
 input = sys.stdin.readline
 
-# # 에라토스테네스의 체
-# n = 10100
-# a = [False,False] + [True]*(n-1)
-# primes = []
-#
-# for i in range(2, n+1):
-#     if a[i]:
-#         primes.append(i)
-#         for j in range(2*i, n+1, i):
-#             a[j] = False
-#
-# # 비밀키 pq : 특정 소수 p와 q의 곱
-#
-# p, k = map(int, input().split())
-#
-# for i in primes:
-#     if p % i == 0:
-#         num = i
-#         break
-#
-# if num <= k:
-#     print('BAD', num)
-# else:
-#     print('GOOD')
+v, e = map(int, input().split())
 
-p, k = map(int, input().split())
+graph = [[]for _ in range(v+1)]
 
-for i in range(2, k):
-    if p % i == 0:
-        print('BAD', i)
+dist = [[1e9] * (v+1) for _ in range(v+1)]
+
+heap = []
+for _ in range(e):
+    x, y, c = map(int, input().split())
+    graph[x].append([c, y])
+    dist[x][y] = c
+    heapq.heappush(heap, [c, x, y])
+
+
+while heap:
+
+    d, s, g = heapq.heappop(heap)
+
+
+    if s == g:
+        print(d)
         break
+    if dist[s][g] < d:
+        continue
+
+    for nd, ng in graph[g]:
+
+        new_d = d + nd
+
+        if new_d < dist[s][ng]:
+            dist[s][ng] = new_d
+            heapq.heappush(heap, [new_d, s, ng])
+
 else:
-    print('GOOD')
+    print(-1)
 
 

@@ -22,6 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+7/18(월)
+* 문자열 다루기 기본[👉](./programmers_12918.md) | 코드[⌨](./programmers_12918.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12918)
+
 7/15(금)
 * 문자열 내림차순으로 배치하기[👉](./programmers_12917.md) | 코드[⌨](./programmers_12917.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12917)
 

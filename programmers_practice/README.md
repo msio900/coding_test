@@ -22,6 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+7/19(화)
+* 서울에서 김서방 찾기[👉](./programmers_12919.md) | 코드[⌨](./programmers_12919.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12919)
+
 7/18(월)
 * 문자열 다루기 기본[👉](./programmers_12918.md) | 코드[⌨](./programmers_12918.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12918)
 

@@ -22,6 +22,9 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+7/20(수)
+* 수박수박수박수박수박수?[👉](./programmers_12922.md) | 코드[⌨](./programmers_12922.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12922)
+
 7/19(화)
 * 서울에서 김서방 찾기[👉](./programmers_12919.md) | 코드[⌨](./programmers_12919.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12919)
 

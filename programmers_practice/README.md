@@ -22,7 +22,13 @@
 ## Challenge[📑](#contents)
 
 ### Study🖋
+
+7/21(목)
+
+* 문자열을 정수로 바꾸기[👉](./programmers_12925.md) | 코드[⌨](./programmers_12925.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12925)
+
 7/20(수)
+
 * 수박수박수박수박수박수?[👉](./programmers_12922.md) | 코드[⌨](./programmers_12922.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12922)
 
 7/19(화)

@@ -25,6 +25,10 @@
 
 7/21(목)
 
+* 시저 암호[👉](./programmers_12926.md) | 코드[⌨](./programmers_12926.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
+
+7/21(목)
+
 * 문자열을 정수로 바꾸기[👉](./programmers_12925.md) | 코드[⌨](./programmers_12925.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12925)
 
 7/20(수)

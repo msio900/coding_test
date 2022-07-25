@@ -23,7 +23,12 @@
 
 ### Study🖋
 
-7/25(월
+7/26(화)
+
+* 이상한 문자 만들기[👉](./programmers_12930.md) | 코드[⌨](./programmers_12930.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12930)
+
+
+7/25(월)
 
 * 약수의 합[👉](./programmers_12928.md) | 코드[⌨](./programmers_12928.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
 

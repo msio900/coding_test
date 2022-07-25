@@ -1,6 +1,6 @@
-## 시저 암호[↩](../programmers_practice)
+## 약수의 합 [↩](../programmers_practice)
 
-> [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+> [약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
 ## 🖋️문제
 

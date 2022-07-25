@@ -23,7 +23,12 @@
 
 ### Study🖋
 
-7/21(목)
+7/25(월
+
+* 약수의 합[👉](./programmers_12928.md) | 코드[⌨](./programmers_12928.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12928)
+
+
+7/22(금)
 
 * 시저 암호[👉](./programmers_12926.md) | 코드[⌨](./programmers_12926.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12926)
 

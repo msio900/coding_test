@@ -4,17 +4,20 @@ import random
 
 # 채희, 승희, 지은, 우성
 
-# 오늘 스터디 참석자
-l = ['민성','정화', '동윤','동훈','우성','윤정','종혁','지은','현주']
-l = random.sample(l, len(l))
+# # 오늘 스터디 참석자
+# l = ['민성','정화', '동윤','동훈','우성','윤정','종혁','지은','현주']
+# l = random.sample(l, len(l))
+#
+# # 4명당 1조로 편성
+# T = int(len(l)/4)
+# team = []
+# for i, name in enumerate(l):
+#     team.append((i%T, name))
+#
+# team.sort()
+#
+# for t in team:
+#     print(*t)
 
-# 4명당 1조로 편성
-T = int(len(l)/4)
-team = []
-for i, name in enumerate(l):
-    team.append((i%T, name))
-
-team.sort()
-
-for t in team:
-    print(*t)
+l = ['월', '화', '수', '목', '금']
+print('다음주 <카메라 ON>데이 :',random.choice(l))

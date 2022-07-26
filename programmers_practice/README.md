@@ -23,6 +23,10 @@
 
 ### Study🖋
 
+7/27(수)
+
+* 자연수 뒤집어 배열로 만들기[👉](./programmers_12932.md) | 코드[⌨](./programmers_12932.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
+
 7/26(화)
 
 * 이상한 문자 만들기[👉](./programmers_12930.md) | 코드[⌨](./programmers_12930.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12930)

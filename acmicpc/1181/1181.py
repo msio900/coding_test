@@ -3,12 +3,10 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-a_arr = list(map(int, input().split()))
-b_arr = list(map(int, input().split()))
+s = [input().rstrip() for _ in range(n)]
+s = list(set(s))
+s.sort()
+s.sort(key=lambda i:len(i))
 
-a_arr.sort()
-b_arr.sort(reverse=True)
-s = 0
-for i in range(n):
-    s+= a_arr[i]*b_arr[i]
-print(s)
+for i in s:
+    print(i)

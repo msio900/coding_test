@@ -23,6 +23,11 @@
 
 ### Study🖋
 
+7/28(목)
+
+* 정수 내림차순으로 배치하기[👉](./programmers_12933.md) | 코드[⌨](./programmers_12933.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12933)
+
+
 7/27(수)
 
 * 자연수 뒤집어 배열로 만들기[👉](./programmers_12932.md) | 코드[⌨](./programmers_12932.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12932)

@@ -23,6 +23,11 @@
 
 ### Study🖋
 
+7/29(금)
+
+* 정수 제곱근 판별[👉](./programmers_12934.md) | 코드[⌨](./programmers_12934.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12934)
+
+
 7/28(목)
 
 * 정수 내림차순으로 배치하기[👉](./programmers_12933.md) | 코드[⌨](./programmers_12933.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12933)

@@ -23,6 +23,10 @@
 
 ### Study🖋
 
+8/1(월)
+
+* 제일 작은 수 제거하기[👉](./programmers_12935.md) | 코드[⌨](./programmers_12935.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12935)
+
 7/29(금)
 
 * 정수 제곱근 판별[👉](./programmers_12934.md) | 코드[⌨](./programmers_12934.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12934)

@@ -23,6 +23,11 @@
 
 ### Study🖋
 
+8/2(화)
+
+* 짝수와 홀수[👉](./programmers_12937.md) | 코드[⌨](./programmers_12937.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12937)
+
+
 8/1(월)
 
 * 제일 작은 수 제거하기[👉](./programmers_12935.md) | 코드[⌨](./programmers_12935.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12935)

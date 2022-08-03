@@ -23,6 +23,10 @@
 
 ### Study🖋
 
+8/3(수)
+
+* 최대공약수와 최소공배수[👉](./programmers_12940.md) | 코드[⌨](./programmers_12940.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12940)
+
 8/2(화)
 
 * 짝수와 홀수[👉](./programmers_12937.md) | 코드[⌨](./programmers_12937.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12937)

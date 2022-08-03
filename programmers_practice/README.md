@@ -23,6 +23,11 @@
 
 ### Study🖋
 
+8/4(목)
+
+* 콜라츠 추측[👉](./programmers_12943.md) | 코드[⌨](./programmers_12943.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12943)
+
+
 8/3(수)
 
 * 최대공약수와 최소공배수[👉](./programmers_12940.md) | 코드[⌨](./programmers_12940.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12940)

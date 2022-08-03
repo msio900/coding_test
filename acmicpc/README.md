@@ -2,9 +2,13 @@
 
 >  코테문제 풀이 최근 순으로
 
+8/3(수)
+
+* 6603 : 로또 [👉](./6603/6603.md) | [문제📝](https://www.acmicpc.net/problem/6603)
+
 8/2(화)
 
-* 1966 : 프린터 큐 [👉](./1966/1966.md) | [문제📝](https://www.acmicpc.net/problem/1966)
+* ✔1966 : 프린터 큐 [👉](./1966/1966.md) | [문제📝](https://www.acmicpc.net/problem/1966)
 
 8/1(월)
 

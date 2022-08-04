@@ -23,6 +23,11 @@
 
 ### Study🖋
 
+8/5(금)
+
+* 평균 구하기[👉](./programmers_12944.md) | 코드[⌨](./programmers_12944.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12944)
+
+
 8/4(목)
 
 * 콜라츠 추측[👉](./programmers_12943.md) | 코드[⌨](./programmers_12943.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12943)

@@ -2,6 +2,10 @@
 
 >  코테문제 풀이 최근 순으로
 
+8/8(월)
+
+* 9663 : N-Queen [👉](./9663 /9663 .md) | [문제📝](https://www.acmicpc.net/problem/9663)
+
 8/4(목)
 
 * 1182 : 부분수열의 합 [👉](./1182/1182.md) | [문제📝](https://www.acmicpc.net/problem/1182)

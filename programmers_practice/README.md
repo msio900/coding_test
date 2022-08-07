@@ -23,6 +23,10 @@
 
 ### Study🖋
 
+8/8(월)
+
+* 하샤드 수[👉](./programmers_12947.md) | 코드[⌨](./programmers_12947.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12947)
+
 8/5(금)
 
 * 평균 구하기[👉](./programmers_12944.md) | 코드[⌨](./programmers_12944.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12944)

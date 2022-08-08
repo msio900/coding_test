@@ -1,13 +1,25 @@
 import sys
-from itertools import combinations
 
 input = sys.stdin.readline
 
-n, s = map(int, input().split())
-s_list = list(map(int, input().split()))
-answer = 0
-for i in range(1, len(s_list)+1):
-    for j in combinations(s_list, i):
-        if sum(j) == s:
-            answer += 1
-print(answer)
+def check(x):
+    for i in range(x):
+        if col[x] == col[i] or abs(col[i] - col[x]) == x - i:
+            return False
+    return True
+
+def dfs(x):
+    global res
+    if x == n:
+        res += 1
+        return
+    for i in range(n):
+        col[x] = i
+        if check(x):
+            dfs(x + 1)
+n = int(input())
+res = 0
+col = [0]*15
+dfs(0)
+print(res)
+

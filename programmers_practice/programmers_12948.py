@@ -1,19 +1,13 @@
-def solution(x):
-    nums = [int(i) for i in str(x)]
-    if x % sum(nums)  == 0:
-        return True
-    else:
-        return False
+def solution(phone_number):
+    answer = '*'*(len(phone_number)-4)+phone_number[-4:]
+    return answer
 
 if __name__ == '__main__':
-    x = 10
-    print(solution(x))
-    x = 12
-    print(solution(x))
-    x = 11
-    print(solution(x))
-    x = 13
-    print(solution(x))
+    phone_number = "01033334444"
+    print(solution(phone_number))
+    phone_number = "027778888"
+    print(solution(phone_number))
+
 
 
 

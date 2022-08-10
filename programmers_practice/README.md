@@ -25,6 +25,10 @@
 
 8/10(수)
 
+* x만큼 간격이 있는 n개의 숫자[👉](./programmers_12954.md) | 코드[⌨](./programmers_12954.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12954)
+
+8/10(수)
+
 * 행렬의 덧셈[👉](./programmers_12950.md) | 코드[⌨](./programmers_12950.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12950)
 
 8/9(화)

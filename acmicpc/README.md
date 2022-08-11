@@ -2,6 +2,10 @@
 
 >  코테문제 풀이 최근 순으로
 
+8/12(금)
+
+* 2485 : 가로수 [👉](./2485/2485.md) | [문제📝](https://www.acmicpc.net/problem/2485)
+
 8/8(월)
 
 * 9663 : N-Queen [👉](./9663/9663.md) | [문제📝](https://www.acmicpc.net/problem/9663)

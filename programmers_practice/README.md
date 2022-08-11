@@ -23,7 +23,11 @@
 
 ### Study🖋
 
-8/10(수)
+8/12(금)
+
+* 직사각형 별찍기[👉](./programmers_12969.md) | 코드[⌨](./programmers_12969.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12969)
+
+8/11(목)
 
 * x만큼 간격이 있는 n개의 숫자[👉](./programmers_12954.md) | 코드[⌨](./programmers_12954.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12954)
 

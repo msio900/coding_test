@@ -1,5 +1,5 @@
 def solution(s):
-    ans=1e9
+    answer =1e9
     if len(s) < 3:
         return len(s)
     for i in range(1,len(s)//2+1):
@@ -16,8 +16,8 @@ def solution(s):
                     strr+=pre
                 cnt=1
                 pre=s[j:j+i]
-        ans=min(ans,len(strr))
-    return ans
+        answer = min(ans,len(strr))
+    return answer
 
 if __name__ =='__main__':
     s = "aabbaccc"

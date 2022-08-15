@@ -23,6 +23,14 @@
 
 ### Study🖋
 
+#### 프로그래머스 Lv.2
+
+8/15(월)
+
+* 문자열 압축[👉](./programmers_60057.md) | 코드[⌨](./programmers_60057.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/60057)
+
+#### 프로그래머스 Lv.1
+
 8/12(금)
 
 * 직사각형 별찍기[👉](./programmers_12969.md) | 코드[⌨](./programmers_12969.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12969)

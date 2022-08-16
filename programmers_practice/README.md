@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+8/16(월)
+
+* 오픈 채팅방[👉](./programmers_42888.md) | 코드[⌨](./programmers_42888.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
+
 8/15(월)
 
 * 문자열 압축[👉](./programmers_60057.md) | 코드[⌨](./programmers_60057.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/60057)

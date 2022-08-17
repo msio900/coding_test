@@ -25,7 +25,15 @@
 
 #### 프로그래머스 Lv.2
 
-8/16(월)
+8/18(목)
+
+* 타겟 넘버[👉](./programmers_43165.md) | 코드[⌨](./programmers_43165.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+
+8/17(수)
+
+* 기능개발[👉](./programmers_42586.md) | 코드[⌨](./programmers_42586.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+
+8/16(화)
 
 * 오픈 채팅방[👉](./programmers_42888.md) | 코드[⌨](./programmers_42888.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42888)
 

@@ -31,7 +31,7 @@
 
 8/17(수)
 
-* 기능개발[👉](./programmers_42586.md) | 코드[⌨](./programmers_42586.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+* ✔️기능개발[👉](./programmers_42586.md) | 코드[⌨](./programmers_42586.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
 
 8/16(화)
 

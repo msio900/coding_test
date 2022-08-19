@@ -27,6 +27,10 @@
 
 8/18(목)
 
+* 메뉴 리뉴얼[👉](./programmers_72411.md) | 코드[⌨](./programmers_72411.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
+
+8/18(목)
+
 * 타겟 넘버[👉](./programmers_43165.md) | 코드[⌨](./programmers_43165.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
 
 8/17(수)

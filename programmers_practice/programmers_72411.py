@@ -1,6 +1,16 @@
+from collections import Counter
+from itertools import combinations
+
 def solution(orders, course):
     answer = []
-    print(orders)
+    dishes = []
+    num_of_dishes = 0
+    for i in orders:
+        num_of_dishes = len(i)
+        if num_of_dishes
+        dishes += list(i)
+    dishes = list(set(dishes))
+    for i in range(2, )
     return answer
 
 if __name__ == '__main__':

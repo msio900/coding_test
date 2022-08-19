@@ -188,20 +188,80 @@
 
 따라서 `"RCJA"`를 return 해야 합니다.
 
-### 1차시도
+### 1차 시도
 
 ```python
 def solution(survey, choices):
     answer = ''
+    character = [['R', 'T'], ['C', 'F'], ['J', 'M'], ['A', 'N']]
+    character_score = [[0,0], [0,0], [0,0], [0,0]]
+    survey_score = []
+    for i in range(len(survey)):
+        if choices[i] > 4:
+            survey_score.append([survey[i][1], choices[i] - 4])
+        else:
+            survey_score.append([survey[i][0], 4 - choices[i]])
+    for i in survey_score:
+        if i[0] in character[0]:
+            if i[0] == character[0][0]:
+                character_score[0][0] += i[1]
+            else:
+                character_score[0][1] += i[1]
+        elif i[0] in character[1]:
+            if i[0] == character[1][0]:
+                character_score[1][0] += i[1]
+            else:
+                character_score[1][1] += i[1]
+        elif i[0] in character[2]:
+            if i[0] == character[2][0]:
+                character_score[2][0] += i[1]
+            else:
+                character_score[2][1] += i[1]
+        else:
+            if i[0] == character[3][0]:
+                character_score[3][0] += i[1]
+            else:
+                character_score[3][1] += i[1]
+    for i in range(4):
+        if character_score[i][0] == character_score[i][1]:
+            answer += sorted(character[i])[0]
+        else:
+            answer += character[i][character_score[i].index(max(character_score[i]))]
+
+
+
     return answer
 ```
 
 * 채점 결과
 
 ```python
-
+채점을 시작합니다.
+정확성  테스트
+테스트 1 〉	통과 (0.01ms, 10.4MB)
+테스트 2 〉	통과 (0.01ms, 10.4MB)
+테스트 3 〉	통과 (0.03ms, 10.2MB)
+테스트 4 〉	통과 (0.02ms, 10.3MB)
+테스트 5 〉	통과 (0.02ms, 10.4MB)
+테스트 6 〉	통과 (0.02ms, 10.2MB)
+테스트 7 〉	통과 (0.02ms, 10.3MB)
+테스트 8 〉	통과 (0.03ms, 10.2MB)
+테스트 9 〉	통과 (0.04ms, 10.3MB)
+테스트 10 〉	통과 (0.06ms, 10.3MB)
+테스트 11 〉	통과 (0.06ms, 10.3MB)
+테스트 12 〉	통과 (0.15ms, 10.4MB)
+테스트 13 〉	통과 (0.25ms, 10.3MB)
+테스트 14 〉	통과 (0.44ms, 10.3MB)
+테스트 15 〉	통과 (0.51ms, 10.3MB)
+테스트 16 〉	통과 (0.54ms, 10.4MB)
+테스트 17 〉	통과 (0.54ms, 10.3MB)
+테스트 18 〉	통과 (0.55ms, 10.3MB)
+테스트 19 〉	통과 (0.55ms, 10.3MB)
+테스트 20 〉	통과 (0.57ms, 10.3MB)
+채점 결과
+정확성: 100.0
+합계: 100.0 / 100.0
 ```
 
 ### 성공😊
-
-* 
+* 지표별 리스트와 스코어 리스트를 만들어 해당하는 점수를 찾아 넣어 지표의 점수를 수치화

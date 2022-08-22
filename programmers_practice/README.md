@@ -27,6 +27,10 @@
 
 8/19(금)
 
+* 괄호 변환[👉](./programmers_60058.md) | 코드[⌨](./programmers_60058.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
+
+8/19(금)
+
 * 메뉴 리뉴얼[👉](./programmers_72411.md) | 코드[⌨](./programmers_72411.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/72411)
 * 성격 유형 검사하기[👉](./programmers_118666.md) | 코드[⌨](./programmers_118666.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/118666)
 

@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+8/24(수)
+
+* 수식 최대화[👉](./programmers_67257.md) | 코드[⌨](./programmers_67257.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/67257)
+
 8/23(화)
 
 * 거리두기 확인하기[👉](./programmers_81302.md) | 코드[⌨](./programmers_81302.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/81302)

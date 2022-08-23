@@ -25,7 +25,11 @@
 
 #### 프로그래머스 Lv.2
 
-8/19(금)
+8/23(화)
+
+* 거리두기 확인하기[👉](./programmers_81302.md) | 코드[⌨](./programmers_81302.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/81302)
+
+8/22(월)
 
 * 괄호 변환[👉](./programmers_60058.md) | 코드[⌨](./programmers_60058.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 

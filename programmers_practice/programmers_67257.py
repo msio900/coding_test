@@ -1,5 +1,21 @@
+from itertools import product
+
 def solution(expression):
     answer = 0
+    nums = []
+    ops = []
+    num = ''
+    for i in expression:
+        if i.isnumeric():
+            num += i
+        else:
+            nums.append(int(num))
+            ops.append(i)
+            num = ''
+    nums.append(int(num))
+
+    print(nums, ops)
+
     return answer
 
 if __name__ == '__main__':
@@ -7,3 +23,6 @@ if __name__ == '__main__':
     print(solution(expression))
     expression = "50*6-3*2"
     print(solution(expression))
+
+
+

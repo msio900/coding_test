@@ -1,5 +1,21 @@
+from collections import deque
+
 def solution(priorities, location):
-	answer = 0
+    priorities = deque(priorities)
+    positions = deque(range(len(priorities)))
+    answer = 0
+    while True:
+        max_priority = max(priorities)
+        if priorities[0] == max_priority:
+            answer += 1
+            if positions[0] == location:
+                break
+            priorities.popleft()
+            positions.popleft()
+        else:
+            priorities.append(priorities.popleft())
+            positions.append(positions.popleft())
+
     return answer
 
 if __name__ =='__main__':
@@ -7,8 +23,3 @@ if __name__ =='__main__':
     print(solution(priorities, location))
     priorities,	location = [1, 1, 9, 1, 1, 1], 0
     print(solution(priorities, location))
-
-
-
-
-

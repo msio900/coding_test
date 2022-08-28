@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+8/29(월)
+
+* 가장 큰 수[👉](./programmers_42746.md) | 코드[⌨](./programmers_42746.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
+
 8/26(금)
 
 * 프린터[👉](./programmers_42587.md) | 코드[⌨](./programmers_42587.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42587)

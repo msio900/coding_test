@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+8/30(화)
+
+* 소수 찾기[👉](./programmers_42839.md) | 코드[⌨](./programmers_42839.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42839)
+
 8/29(월)
 
 * 가장 큰 수[👉](./programmers_42746.md) | 코드[⌨](./programmers_42746.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42746)

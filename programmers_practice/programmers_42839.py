@@ -1,6 +1,6 @@
 from itertools import permutations
 
-n = 900000
+n = 1000000000
 a = [False,False] + [True]*(n-1)
 primes=[]
 
@@ -28,4 +28,6 @@ if __name__ == '__main__':
     numbers = "17"
     print(solution(numbers))
     numbers = "011"
+    print(solution(numbers))
+    numbers = "123412"
     print(solution(numbers))

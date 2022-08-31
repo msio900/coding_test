@@ -24,8 +24,11 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
-
 8/31(수)
+
+* **재도전** 조이스틱[👉](./programmers_42860.md) | 코드[⌨](./programmers_42860.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42860)
+
+* 8/31(수)
 
 * 조이스틱[👉](./programmers_42860.md) | 코드[⌨](./programmers_42860.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42860)
 

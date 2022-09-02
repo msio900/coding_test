@@ -46,19 +46,6 @@ def solution(info, query):
                 l = mid + 1
         answer.append(len(info_q) - l)
 
-    # 민성 1차 시도
-    # for i in query:
-    #     i = i.replace('and','')
-    #     # print(i.split()[0], i.split()[1], i.split()[2], i.split()[3], i.split()[4])
-    #     lng, part, exp, soul_food, score = i.split()[0], i.split()[1], i.split()[2], i.split()[3], i.split()[4]
-    #     cnt = 0
-    #     for j in info:
-    #         print(f'lng: {lng} part: {part} exp: {exp} soul_food: {soul_food} score: {score}')
-    #         print(j.split()[0], j.split()[1], j.split()[2], j.split()[3], j.split()[4])
-    #         if (lng == j.split()[0] or lng == '-') and (part == j.split()[1] or part == '-') and (exp == j.split()[2] or exp == '-') and (soul_food == j.split()[3] or soul_food == '-') and (int(score) <= int(j.split()[4]) or score == '-'):
-    #             cnt += 1
-    #     answer.append(cnt)
-
     return answer
 
 if __name__ == '__main__':

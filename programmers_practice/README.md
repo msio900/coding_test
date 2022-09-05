@@ -24,6 +24,14 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
+9/6(화)
+
+* 위장[👉](./programmers_42578.md) | 코드[⌨](./programmers_42578.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
+
+9/5(월)
+
+* 후보키[👉](./programmers_42890.md) | 코드[⌨](./programmers_42890.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
+
 9/2(금)
 
 * 순위 검색[👉](./programmers_72412.md) | 코드[⌨](./programmers_72412.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/72412)

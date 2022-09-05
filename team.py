@@ -19,5 +19,5 @@ import random
 # for t in team:
 #     print(*t)
 
-l = ['월', '화', '수', '목', '금']
+l = ['화', '수', '목', '금'] # '월',
 print('다음주 <카메라 ON>데이 :',random.choice(l))

@@ -1,7 +1,13 @@
+from collections import defaultdict
+
 def solution(clothes):
     answer = 0
-    df = pd.DataFrame(clothes)
-    print(df[1].unique())
+    category = defaultdict(int)
+    for i in clothes:
+        # print(i)
+        category[i[1]] += 1
+    cate_clothes = list(category.values())
+    answer += sum(cate_clothes)
 
     return answer
 
@@ -10,9 +16,3 @@ if __name__ =='__main__':
     print(solution(clothes))
     clothes = [["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]
     print(solution(clothes))
-
-
-
-
-
-

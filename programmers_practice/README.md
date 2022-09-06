@@ -24,6 +24,10 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
+9/7(수)
+
+* 다리를 지나는 트럭[👉](./programmers_42583.md) | 코드[⌨](./programmers_42583.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
+
 9/6(화)
 
 * 위장[👉](./programmers_42578.md) | 코드[⌨](./programmers_42578.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42578)

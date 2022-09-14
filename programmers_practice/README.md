@@ -24,6 +24,10 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
+9/15(금)
+
+*  N개의 최소공배수[👉](./programmers_12953.md) | 코드[⌨](./programmers_12953.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
+
 9/9(금)
 
 * 두 큐 합 같게 만들기[👉](./programmers_118667.md) | 코드[⌨](./programmers_118667.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/118667)

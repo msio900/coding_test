@@ -21,18 +21,46 @@
 ## 💡풀이
 
 ```python
+from math import gcd
+
+def LCM(x, y): # 최소공배수를 구하는 함수 구현
+    result = (x*y)//gcd(x,y) # 두 값을 곱한 값을 최대공약수로 나눔
+    return result
+
 def solution(arr):
     answer = 0
+    # arr.sort(reverse=True)
+    answer = LCM(arr[0], arr[1])
+    for i in range(2, len(arr)):
+        answer = LCM(answer, arr[i])
+
     return answer
 ```
 
 * 채점 결과
 
 ```python
-
+정확성  테스트
+테스트 1 〉	통과 (0.01ms, 10.1MB)
+테스트 2 〉	통과 (0.00ms, 10.1MB)
+테스트 3 〉	통과 (0.01ms, 10.1MB)
+테스트 4 〉	통과 (0.01ms, 10.1MB)
+테스트 5 〉	통과 (0.00ms, 10.3MB)
+테스트 6 〉	통과 (0.01ms, 10.1MB)
+테스트 7 〉	통과 (0.01ms, 10.1MB)
+테스트 8 〉	통과 (0.01ms, 10.1MB)
+테스트 9 〉	통과 (0.01ms, 10.2MB)
+테스트 10 〉	통과 (0.01ms, 10.3MB)
+채점 결과
+정확성: 100.0
+합계: 100.0 / 100.0
 ```
 
-### 실패😂
+- 상위 두 값의 `LCM`를 구함.
+- 앞서 구한 `LCM`과 리스트 상의 다음 값의 LCM을 구하는 것을 반복함.
+- 최종적으로 리스트 모든 수의 `LCM` 도출
+
+### 성공😊
 
 ### 🤝다른 풀이
 

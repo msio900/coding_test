@@ -24,7 +24,11 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
-9/15(금)
+9/16(금)
+
+*  멀리뛰기[👉](./programmers_12914.md) | 코드[⌨](./programmers_12914.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12914)
+
+9/15(목)
 
 *  N개의 최소공배수[👉](./programmers_12953.md) | 코드[⌨](./programmers_12953.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12953)
 

@@ -24,6 +24,14 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
+9/20(화)
+
+*  카펫[👉](./programmers_42842.md) | 코드[⌨](./programmers_42842.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42842)
+
+9/19(월)
+
+*  두 큐 값 같게 하기[👉](./programmers_118667.md) | 코드[⌨](./programmers_118667.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/118667)
+
 9/16(금)
 
 *  멀리뛰기[👉](./programmers_12914.md) | 코드[⌨](./programmers_12914.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12914)

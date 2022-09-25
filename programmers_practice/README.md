@@ -24,6 +24,11 @@
 ### Study🖋
 
 #### 프로그래머스 Lv.2
+
+9/26(월)
+
+*  하노이의 탑[👉](./programmers_12946.md) | 코드[⌨](./programmers_12946.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12946)
+
 9/20(화)
 
 *  카펫[👉](./programmers_42842.md) | 코드[⌨](./programmers_42842.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42842)

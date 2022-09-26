@@ -1,3 +1,5 @@
+def hanoi(num, start, to, mid, answer):
+
 def solution(n):
     answer = [[]]
     return answer

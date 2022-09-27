@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+9/27(화)
+
+*  양궁대회[👉](./programmers_92342.md) | 코드[⌨](./programmers_92342.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/92342)
+
 9/26(월)
 
 *  하노이의 탑[👉](./programmers_12946.md) | 코드[⌨](./programmers_12946.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/12946)

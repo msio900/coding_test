@@ -25,6 +25,10 @@
 
 #### 프로그래머스 Lv.2
 
+10/21(금)
+
+* 후보키[👉](./programmers_42890.md) | 코드[⌨](./programmers_42890.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/42890)
+
 9/27(화)
 
 *  양궁대회[👉](./programmers_92342.md) | 코드[⌨](./programmers_92342.py) | 문제[📝](https://school.programmers.co.kr/learn/courses/30/lessons/92342)

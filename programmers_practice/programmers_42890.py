@@ -1,24 +1,26 @@
 from itertools import combinations
 
+
 def solution(relation):
-    x, y = len(relation[0]), len(relation)
-    col = list(range(x))
+    x, y = len(relation[0]), len(relation)  # x :num of rows y : num of columns
+    col = list(range(x))  # for presenting columns cases
     cases = []
     uniques = []
+    # candidate key's combination list
     for i in range(1, x + 1):
-        case = list(combinations(col, i))
+        case = list(combinations(col, i))  #
         cases += case
-    for case in cases:
-        # print(case)
+
+    for case in cases:  # 'case': each candidate key column
         keys = []
         for j in range(y):
             key = ''
             for i in case:
                 key += relation[j][i]
             keys.append(key)
-        if len(keys) == len(set(keys)):
+        if len(keys) == len(set(keys)):  # varify uniqueness
             for x in uniques:
-                if set(x).issubset(set(case)):
+                if set(x).issubset(set(case)):  # varify minimality
                     break
             else:
                 uniques.append(list(case))

@@ -50,24 +50,25 @@
 from itertools import combinations
 
 def solution(relation):
-    x, y = len(relation[0]), len(relation)
-    col = list(range(x))
+    x, y = len(relation[0]), len(relation) # x :num of rows y : num of columns
+    col = list(range(x))    # for presenting columns cases
     cases = []
     uniques = []
+    # candidate key's combination list
     for i in range(1, x + 1):
-        case = list(combinations(col, i))
+        case = list(combinations(col, i)) # 
         cases += case
-    for case in cases:
-        # print(case)
+    
+    for case in cases: # 'case': each candidate key column
         keys = []
         for j in range(y):
             key = ''
             for i in case:
                 key += relation[j][i]
             keys.append(key)
-        if len(keys) == len(set(keys)):
+        if len(keys) == len(set(keys)): # varify uniqueness
             for x in uniques:
-                if set(x).issubset(set(case)):
+                if set(x).issubset(set(case)): # varify minimality
                     break
             else:
                 uniques.append(list(case))
@@ -114,6 +115,18 @@ def solution(relation):
 ```
 
 ### 성공😂
+* 이 문제는 '후보키'의 두 가지 속성인 `유일성`과 `최소성`을 만족시키는 컬럼의 조합을 찾는 문제이다.
+  * 테이블이 갖는 열의 조합을 찾기 위해 `itertools` 패키지의 `combinations`함수를 사용하였다.
+  * 1개부터 모든 열의 갯수까지의 조합을 도출하기 위해 `for`반복문을 `range(1, len(col) + 1)`로 구성하였다.
+  * 열의 갯수가 적은 경우부터 튜플의 리스트를 만들어 다음 조건문을 통해 `유일성`을 검증한다.
+    ```python
+    if len(keys) == len(set(keys)):
+    ```
+  * 그 다음 `issubset()`함수를 사용하여 유일성이 검증된 키(key)가 기존에 나온 후보키의 부분집합이 아닌지 검증한다.
+    ```python
+    if set(x).issubset(set(case)):
+    ```
+* 최종적으로 검증된 후보키 조합을 `unique`라는 리스트에 넣었으므로 `len(uniques)`를 return하면 정답이 나온다.
 
 ### 🤝다른 풀이
 

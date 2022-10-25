@@ -2,6 +2,10 @@
 
 >  코테문제 풀이 최근 순으로
 
+10/25()
+
+* 13023 : ABCDE [👉](./13023/13023.md) | [문제📝](https://www.acmicpc.net/problem/13023)
+
 10/24(월)
 
 * 15649 : N과 M (1) [👉](./15649/15649.md) | [문제📝](https://www.acmicpc.net/problem/15649)

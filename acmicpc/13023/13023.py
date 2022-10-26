@@ -1,7 +1,7 @@
 import sys
 from collections import defaultdict
 
-# A - B, B - C, C - D, D - E친구관계가 존재하는지 안하는지 구하는 프로그램을 작성하시오.
+# A - B, B - C, C - D, D - E 친구관계가 존재하는지 안하는지 구하는 프로그램을 작성하시오.
 
 input = sys.stdin.readline
 
@@ -17,7 +17,7 @@ for _ in range(m):
     a, b = map(int, input().split())
     relations[a].append(b)
     relations[b].append(a)
-
+print('그래프 그리기')
 def dfs(idx, depth):
     global answer
     visited[idx] = True

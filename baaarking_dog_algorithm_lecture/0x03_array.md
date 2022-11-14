@@ -100,7 +100,7 @@ print(*erase(3, arr2))
 
 ### 백준 10808번 : 알파벳 갯수[문제⌨️](https://www.acmicpc.net/problem/10808)
 
-> 풀이[✏️](./0x03_10808.py)
+> 풀이[✏️](../acmicpc/10808/10808.md)
 
 * a~z 까지의 그릇을 구현해준다.![image-20221114160536225](images/image-20221114160536225.png)
 
@@ -127,7 +127,7 @@ int main(void) {
 }
 ```
 
-* python 풀이
+* python 풀이 [✏️](./0x03_10808.py)
 
 ```python
 import sys

@@ -83,23 +83,23 @@
 
 * 정석 연결 리스트
 
-```c++
-struct NODE {
-    struct NODE *prev, *next;
-    int data;
-};
-```
+    ```c++
+    struct NODE {
+        struct NODE *prev, *next;
+        int data;
+    };
+    ```
 
 * 간편한 연결 리스트
 
-```c++
-const int MX = 1000005;
-int dat[MX], pre[MX], nxt[MX];
-int unused = 1;
-
-fill(pre, pre+MX, -1);
-fill(nxt, nxt+MX, -1);
-```
+    ```c++
+    const int MX = 1000005;
+    int dat[MX], pre[MX], nxt[MX];
+    int unused = 1;
+    
+    fill(pre, pre+MX, -1);
+    fill(nxt, nxt+MX, -1);
+    ```
 
 ![image-20221115152801565](images/image-20221115152801565.png)
 
@@ -111,4 +111,348 @@ fill(nxt, nxt+MX, -1);
 | dat  |  -1  |  65  |  13  |      |  21  |  17  |               |      |      |      |
 | pre  |  -1  |  2   |  0   |      |  1   |  4   |               |      |      |      |
 | nxt  |  2   |  4   |  1   |      |  5   |      |               |      |      |      |
+
+* `traverse()`
+
+  ```c++
+  void traverse(){
+    int cur = nxt[0];
+    while(cur != -1){
+      cout << dat[cur] << ' ';
+      cur = nxt[cur];
+    }
+    cout << "\n\n";
+  }
+  ```
+  
+* `insert()`
+
+  ```c++
+  void insert(int addr, int num){
+    dat[unused] = num;
+    pre[unused] = addr;
+    nxt[unused] = nxt[addr];
+    if(nxt[addr] != -1) pre[nxt[addr]] = unused;
+    nxt[addr] = unused;
+    unused++;
+  }
+  ```
+
+* `erase()`
+
+  ```c++
+  void erase(int addr){
+    nxt[pre[addr]] = nxt[addr];
+    if(nxt[addr] != -1) pre[nxt[addr]] = pre[addr];
+  }
+  ```
+
+### python으로 연결 리스트 구현하기[✏️](./0x04_linked_list.py)
+
+* 정식 연결 리스트 - 단일
+
+  ```python
+  class Node:
+      def __init__(self, item):
+          self.data = item
+          self.next = None
+  class LinkedList:
+      def __init__(self): # 비어 있는 연결 리스트
+          self.nodeCount = 0
+          self.head = None
+          self.tail = None
+      # 리스트 출력
+      def __repr__(self):
+          if self.nodeCount == 0:
+              return 'LinkedList: empty'
+          s = ''
+          curr = self.head
+          while curr is not None:
+              s += repr(curr.data)
+              if curr.next is not None:
+                  s += ' -> '
+              curr = curr.next
+          return s
+      
+      # 길이 리턴
+      def getLength(self):
+          return self.nodeCount
+      
+      # 리스트 순회
+      def traverse(self):
+          traversal = []
+          curr = self.head
+          while curr != None: # tail에 도달하면 종료
+              traversal.append(curr.data)
+              curr = curr.next
+          
+          return traversal
+      
+      # 특정 원소 참조
+      def getAt(self, pos):
+          if pos <= 0 or pos > self.nodeCount:
+              return None
+          i = 1
+          curr = self.head
+          while i < pos:
+              curr = curr.next
+              i += 1
+          return curr
+      # 원소의 삽입
+      def insertAt(self, pos, newNode):
+          # 1 <= pos <= nodeCount+1, pos가 가리키는 위치에 newNode를 삽입하고, 성공/실패에 따라 True/False를 리턴
+          if pos < 1 or pos > self.nodeCount + 1:
+              return False
+          
+          if pos == 1: # 삽입하려는 위치가 맨 앞일 때
+              newNode.next = self.head
+              self.head = newNode
+          else:
+              if pos == self.nodeCount + 1: # 맨 끝에 삽입하려는 경우 앞에서부터 순차적으로 찾아갈 필요가 없음
+                  prev = self.tail
+              else:
+                  prev = self.getAt(pos-1) # newNode가 삽입될 위치
+              newNode.next = prev.next
+              prev.next = newNode
+          
+          if pos == self.nodeCount + 1: # 삽입하려는 위치가 맨 뒤일 때, tail 갱신
+              self.tail = newNode
+              
+          self.nodeCount += 1
+          return True
+      
+      # 원소의 삭제
+      def popAt(self, pos):
+          # 1 <= pos <= nodeCount, pos가 가리키는 위치의 node를 삭제하고, 그 node의 데이터를 리턴
+          if pos < 1 or pos > self.nodeCount:
+              raise IndexError
+          
+          if pos == 1: # 삭제하려는 node가 맨 앞일 때
+              curr = self.head
+              self.head = curr.next
+              if self.nodeCount == 1: # 유일한 노드인 경우
+                  self.tail = None
+          else:
+              prev = self.getAt(pos-1)
+              curr = prev.next
+              prev.next = curr.next
+              if pos == self.nodeCount: # 삭제하려는 node가 맨 끝일 때
+                  self.tail = prev
+                  
+          self.nodeCount -= 1
+          return curr.data
+              
+      
+      # 두 리스트의 연결(합치기)
+      def concat(self, L):
+          self.tail.next = L.head
+          if L.tail:
+              self.tail = L.tail
+          self.nodeCount += L.nodeCount
+  ```
+
+* 정식 연결 리스트 - 양방향
+
+  ```python
+  class Node:
+      def __init__(self, item):
+          self.data = item
+          self.prev = None
+          self.next = None
+  class DoublyLinkedList:
+      def __init__(self):
+          self.nodeCount = 0
+          self.head = Node(None)
+          self.tail = Node(None)
+          self.head.prev = None
+          self.head.next = self.tail
+          self.tail.prev = self.head
+          self.tail.next = None
+      
+      # 리스트 출력
+      def __repr__(self):
+          if self.nodeCount == 0:
+              return 'LinkedList: empty'
+          s = ''
+          curr = self.head
+          while curr.next.next:
+              curr = curr.next
+              s += repr(curr.data)
+              if curr.next.next is not None:
+                  s += ' -> '
+          return s
+      
+      # 길이 리턴
+      def getLength(self):
+          return self.nodeCount
+      
+      # 리스트 순회
+      def traverse(self):
+          result = []
+          curr = self.head
+          while curr.next.next:
+              curr = curr.next
+              result.append(curr.data)
+          return result
+      
+      # 리스트 역순회
+      def reverse(self):
+          result = []
+          curr = self.tail
+          while curr.prev.prev:
+              curr = curr.prev
+              result.append(curr.data)
+          return result
+      
+      # 특정 원소 참조
+      def getAt(self, pos): # getAt(0) -> head
+          if pos < 0 or pos > self.nodeCount:
+              return None
+          
+          if pos > self.nodeCount // 2:
+              i = 0
+              curr = self.head
+              while i < self.nodeCount - pos + 1:
+                  curr = curr.next
+                  i += 1
+          else:
+              i = 0
+              curr = self.head
+              while i < pos:
+                  curr = curr.next
+                  i += 1
+          return curr
+      
+      # 원소의 삽입
+      def insertAfter(self, prev, newNode): # prev가 가리키는 node의 다음에 newNode를 삽입하고 성공/실패에 따라 True/False를 리턴
+          next = prev.next
+          newNode.prev = prev
+          newNode.next = next
+          prev.next = newNode
+          next.prev = newNode
+          self.nodeCount += 1
+          return True
+      
+      def insertBefore(self, next, newNode):
+          prev = next.prev
+          newNode.prev = prev
+          newNode.next = next
+          prev.next = newNode
+          next.prev = newNode
+          self.nodeCount += 1
+          return True
+      
+      def insertAt(self, pos, newNode):
+          if pos < 1 or pos > self.nodeCount + 1:
+              return False
+          prev = self.getAt(pos-1) # newNode가 삽입될 위치
+          return self.insertAfter(prev, newNode)
+      
+      # 원소의 삭제
+      def popAfter(self, prev): # prev의 다음 node를 삭제하고, 그 node의 data를 리턴
+          curr = prev.next
+          next = curr.next
+          prev.next = next
+          next.prev = prev
+          self.nodeCount -= 1
+          return curr.data
+      
+      def popBefore(self, next): # next의 이전에 있던 node를 삭제하고, 그 node의 data를 리턴
+          curr = next.prev
+          prev = curr.prev
+          prev.next = next
+          next.prev = prev
+          self.nodeCount -= 1
+          return curr.data
+      
+      def popAt(self, pos): # pos에 의해 지정되는 node를 삭제하고, 그 node의 data를 리턴
+          if pos < 1 or pos > self.nodeCount:
+              raise IndexError
+          prev = self.getAt(pos-1)
+          return self.popAfter(prev)
+          
+      def concat(self, L):
+          self.nodeCount += L.nodeCount
+          self.tail.prev.next = L.head.next
+          L.head.next.prev = self.tail.prev
+          self.tail = L.tail
+  a = Node(67)
+  b = Node(34)
+  c = Node(28)
+  L = DoublyLinkedList()
+  L.insertAt(1, a)
+  L.insertAt(2, b)
+  L
+  L.insertAt(1, c)
+  L
+  L.popAt(3)
+  L
+  ```
+
+* 간편한 연결리스트 구현
+
+  ```python
+  MX = 1000005
+  dat = [-1] * MX # [-1, -1, -1, ..., -1]
+  pre = [-1] * MX # [-1, -1, -1, ..., -1]
+  nxt = [-1] * MX # [-1, -1, -1, ..., -1]
+  
+  unused = 1
+  
+  def insert(addr : int, num: int):
+      global unused
+      dat[unused] = num
+      pre[unused] = addr
+      nxt[unused] = nxt[addr]
+      if nxt[addr] != -1:
+          pre[nxt[addr]] = unused
+      nxt[addr] = unused
+      unused += 1
+  
+  def traverse():
+      cur = nxt[0]
+      while cur != -1:
+          print(dat[cur], end=' ')
+          cur = nxt[cur]
+      print()
+  
+  def erase(addr : int):
+      nxt[pre[addr]] = nxt[addr]
+      if nxt[addr] != -1:
+          pre[nxt[addr]] = pre[addr]
+  
+  
+  def insert_test():
+      print('******* insert_test *******')
+      insert(0, 10) # 10(address=1) <- 시작노드
+      traverse()
+      insert(0, 30) # 30(address=2) 10
+      traverse()
+      insert(2, 40) # 30 40(address=3) 10
+      traverse()
+      insert(1, 20) # 30 40 10 20(address=4)
+      traverse()
+      insert(4, 70) # 30 40 10 20 70(address=5)
+      traverse()
+  
+  def erase_test():
+      print('******* erase_test *******')
+      erase(1) # 30 40 20 70
+      traverse()
+      erase(2) # 40 20 70
+      traverse()
+      erase(4) # 40 70
+      traverse()
+      erase(5) # 40
+      traverse()
+  
+  insert_test()
+  erase_test()
+  ```
+
+  
+
+
+
+
 

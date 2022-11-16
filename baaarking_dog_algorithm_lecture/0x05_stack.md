@@ -67,13 +67,99 @@ void top(){
 
 ### python으로 스택 구현하기[✏️](0x05_stack_test.py)
 
+* 구현
 
+  ```python
+  MX = 1000005
+  dat = [0] * MX
+  pos = 0
+  ```
 
+* push()
 
+  ```python
+  def push(x : int):
+      global pos
+      dat[pos] = x
+      pos += 1
+  ```
+
+* pop()
+
+  ```python
+  def pop():
+      global pos
+      pos -= 1
+  ```
+
+* top()
+
+  ```python
+  def top():
+      return dat[pos-1]
+  ```
 
 ## 0x02 STL Stack
 
 
 
 ## 0x03 연습문제[📑](#contents)<a id='0x03'></a>
+
+### 백준 10828번 : 스택 [문제⌨️](https://www.acmicpc.net/problem/10828)
+
+> 풀이[✏️](../acmicpc/re_10828/re_10828.md)
+
+* stack 자료구조의 기본 기능인 `push()`, `pop()`, `top()`을 함수로 구현하여 풀이
+
+  ```python
+  import sys
+  
+  input = sys.stdin.readline
+  
+  mx = 10000005
+  dat = [0]*mx
+  pos = 0
+  
+  def push(x: int):
+      global pos
+      dat[pos] = x
+      pos += 1
+  
+  def pop():
+      global pos
+      pos -= 1
+  
+  def size():
+      return pos
+  
+  def top():
+      return dat[pos - 1]
+  
+  n = int(input())
+  
+  for _ in range(n):
+      command = input().split()
+      if command[0] == 'push':
+          push(int(command[1]))
+      elif command[0] == 'pop':
+          if pos == 0:
+              print(-1)
+          else:
+              print(top())
+              pop()
+      elif command[0] == 'size':
+          print(size())
+      elif command[0] == 'empty':
+          if pos == 0:
+              print(1)
+          else:
+              print(0)
+      else: # top()
+          if pos == 0:
+              print(-1)
+          else:
+              print(top())
+  ```
+
+  ![image-20221116175247126](images/image-20221116175247126.png)
 

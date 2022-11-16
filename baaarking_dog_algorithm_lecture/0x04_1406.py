@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 간편한 연결 리스트 구현 ##
 
 # import sys
@@ -170,13 +169,10 @@
 
 ## 스택을 이용한 풀이 ##
 
-=======
->>>>>>> origin/master
 import sys
 
 input = sys.stdin.readline
 
-<<<<<<< HEAD
 L_stack = list(map(str, input().rstrip()))
 
 M = int(input())
@@ -255,4 +251,3 @@ for _ in range(n):
         insert(cursor, command[1])
         cursor = nxt[cursor]
 traverse()
->>>>>>> origin/master

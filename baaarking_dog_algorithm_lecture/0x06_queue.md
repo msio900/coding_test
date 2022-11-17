@@ -1,6 +1,6 @@
-# ✏️0x05강 스택
+# ✏️0x06강 큐
 
-> 영상 URL[📹](https://youtu.be/0DsyCXIN7Wg)
+> 영상 URL[📹](https://youtu.be/D_fwSy5tRAY)
 
 ## 📑Contents<a id='contents'></a>
 
@@ -40,3 +40,91 @@ int head = 0, tail = 0;
 
 * 큐는 점점 밀리는 구조로 구현
 * 큐를 배열로 구현할 경우 앞에 계속해서 쓸모없는 공간이 생기게 됨. 이를 해결하기 위해 큐에 원소가 들어갈 배열을 원형으로 만들면 됨. -> `원형 큐`
+
+### push 함수
+
+![image-20221117135123865](images/image-20221117135123865.png)
+
+* 22를 추가할 경우 tail에 22를 집어넣고 tail을 1 증가시킴
+
+![image-20221117135230971](images/image-20221117135230971.png)
+
+```c++
+void push(int x) {
+    dat[tail + 1] = x;
+}
+```
+
+### pop 함수
+
+![image-20221117135330341](images/image-20221117135330341.png)
+
+* pop을 진행할 경우 head를 진행하면 됨.
+
+```c++
+void pop(){
+    head++;
+}
+```
+
+### front/back 함수
+
+![image-20221117135447386](images/image-20221117135447386.png)
+
+* front 함수는 큐에 가장 먼저 있는 수 back 함수는 큐의 가장 마지막에 있는 수를 반환하면 됨.
+
+```c++
+int front(){
+    return dat[head];
+}
+
+int back(){
+    return dat[tail-1];
+}
+```
+
+### python으로 큐 구현하기[✏️](0x06_queue_test.py)
+
+* 구현
+
+  ```python
+  mx = 1000005
+  dat = [0]*mx
+  head, tail = 0, 0
+  ```
+
+* `push()`
+
+  ```py
+  def push(x : int):
+      global tail
+      dat[tail] = x
+      tail += 1
+
+* `pop()`
+
+  ```py
+  def pop():
+      global head
+      head += 1
+  ```
+
+* `front()`/`back()`
+
+  ```python
+  def front() -> int:
+      return dat[head]
+  
+  def back() -> int:
+      return dat[tail-1]
+  ```
+
+## 0x02 STL queue
+
+
+
+## 0x03 연습문제[📑](#contents)<a id='0x03'></a>
+
+### 백준 10845번 : 큐 [문제⌨️](https://www.acmicpc.net/problem/10845)
+
+> 풀이[✏️](../acmicpc/10845/10845.md)

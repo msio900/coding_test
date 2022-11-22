@@ -89,37 +89,74 @@
 
 > 풀이[✏️](../acmicpc/4949/4949.md)
 
-```python
-import sys
+* 내 풀이
 
-input = sys.stdin.readline
+    ```python
+    import sys
 
-bracket = {'(':')', '[':']'}
+    input = sys.stdin.readline
 
-while True:
-    sentence = input().rstrip()
-    if sentence == '.': # while문 종료 조건
-        break
-    stack = [] # 스택 정의
-    flag = True # flag 정의
-    for letter in sentence: # 문장에서 문자 하나씩 확인
-        if letter in '([': # 여는 괄호일 경우 스택에 집어넣기 
-            stack.append(letter)
-        elif letter in ')]': # 닫는 괄호일 경우 검사
-            if not stack: # 스택이 비어 있다면 괄호쌍 성립하지 않음 -> 종료
-                flag = False
-                break
-            elif stack:
-                if bracket[stack[-1]] != letter: # 가장 위의 여는괄호랑 쌍을 이루지 않으면 괄호 쌍 성립하지 않음 -> 종료
+    bracket = {'(':')', '[':']'}
+
+    while True:
+        sentence = input().rstrip()
+        if sentence == '.': # while문 종료 조건
+            break
+        stack = [] # 스택 정의
+        flag = True # flag 정의
+        for letter in sentence: # 문장에서 문자 하나씩 확인
+            if letter in '([': # 여는 괄호일 경우 스택에 집어넣기 
+                stack.append(letter)
+            elif letter in ')]': # 닫는 괄호일 경우 검사
+                if not stack: # 스택이 비어 있다면 괄호쌍 성립하지 않음 -> 종료
                     flag = False
                     break
-                elif bracket[stack[-1]] == letter: # 가장 위의 여는괄호와 쌍을 이루면 여는 괄호 삭제
-                    stack.pop()
-    if stack: # while문을 마치고 스택이 남아있다면 괄호 쌍을 성립하지 않음
-        flag = False
-    if flag:# 괄호 쌍 성립 여부 출력
-        print('yes')
-    else:
-        print('no')
-```
+                elif stack:
+                    if bracket[stack[-1]] != letter: # 가장 위의 여는괄호랑 쌍을 이루지 않으면 괄호 쌍 성립하지 않음 -> 종료
+                        flag = False
+                        break
+                    elif bracket[stack[-1]] == letter: # 가장 위의 여는괄호와 쌍을 이루면 여는 괄호 삭제
+                        stack.pop()
+        if stack: # while문을 마치고 스택이 남아있다면 괄호 쌍을 성립하지 않음
+            flag = False
+        if flag:# 괄호 쌍 성립 여부 출력
+            print('yes')
+        else:
+            print('no')
+    ```
 
+* 바킹독님 풀이 `C++` -> `python`
+
+  ```python
+  import sys
+  
+  input = sys.stdin.readline
+  
+  while True:
+      a = input().rstrip()
+      if a == '.':
+          break
+      s = []
+      is_valid = True
+      for c in a:
+          if c == '(' or c =='[':
+              s.append(c)
+          elif c == ')':
+              if not s or s[-1] != '(':
+                  is_valid = False
+                  break
+              s.pop()
+          elif c == ']':
+              if not s or s[-1] != '[':
+                  is_valid = False
+                  break
+              s.pop()
+      if s:
+          is_valid = False
+      if is_valid:
+          print('yes')
+      else:
+          print('no')
+  ```
+  
+  

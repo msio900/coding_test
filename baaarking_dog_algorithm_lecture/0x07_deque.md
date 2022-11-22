@@ -143,7 +143,7 @@ int back(){
 
 ## 0x03 연습문제
 
-### 백준 10845번 : 큐 [문제⌨️](https://www.acmicpc.net/problem/10866)
+### 백준 10866번 : 큐 [문제⌨️](https://www.acmicpc.net/problem/10866)
 
 > 풀이[✏️](../acmicpc/re_10866/re_10866.md)
 

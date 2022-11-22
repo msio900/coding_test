@@ -1,6 +1,12 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
+11/22(화)
+
+* **바킹독 0x09 : BFS** 1926: 그림 [문제📝](https://www.acmicpc.net/problem/1926)
+
+  [풀이✏️](./1926/1926.md) 
+
 11/21(월)
 
 * **바킹독 0x08 : 스택의 활용(수식의 괄호 쌍)** 4949: 균형잡힌 세상 [문제📝](https://www.acmicpc.net/problem/4949)

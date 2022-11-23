@@ -47,6 +47,10 @@
 
   ![image-20221123075030271](../images/0x09_BFS/image-20221123075030271.png)
 
+* 이 과정 반복
+
+  ![Animation](images/Animation.gif)
+
 ## 0x02 응용 1 - 거리 측정[📑](#contents)<a id='0x02'></a>
 
 

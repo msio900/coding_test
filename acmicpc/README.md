@@ -1,6 +1,12 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
+11/24(목)
+
+* **바킹독 0x0B : 재귀** 1629: 곱셈 [문제📝](https://www.acmicpc.net/problem/1629)
+
+  [풀이✏️](./1629/1629.md) 
+
 11/22(화)
 
 * **바킹독 0x09 : BFS** 1926: 그림 [문제📝](https://www.acmicpc.net/problem/1926)

@@ -182,7 +182,8 @@ void func1(int n){
 ```c++
 int func1(int a, int b, int m){
     int val = 1;
-    while val % m;
+    while(b--) val *= a;
+    return val % m;
 }
 ```
 

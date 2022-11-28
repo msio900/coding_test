@@ -18,3 +18,4 @@ def func2(n : int):
 print('1부터 n까지 더하는 함수')
 print(func2(10))
 print('-'*120)
+

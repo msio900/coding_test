@@ -1,7 +1,17 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
-11/24(목)
+11/28(월)
+
+* **바킹독 0x0D : 시뮬레이션** 15683 : 감시 [문제📝](https://www.acmicpc.net/problem/15683)
+
+11/24(금)
+
+* **바킹독 0x0C : 백트래킹** 15649 : N과 M (1) [문제📝](https://www.acmicpc.net/problem/15649)
+
+  [풀이✏️](./15649/15649.md) 
+
+11/23(목)
 
 * **바킹독 0x0B : 재귀** 1629: 곱셈 [문제📝](https://www.acmicpc.net/problem/1629)
 

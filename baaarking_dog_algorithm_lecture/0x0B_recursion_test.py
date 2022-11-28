@@ -10,10 +10,10 @@ func1(10)
 print('-'*120)
 
 # 1부터 n까지 더하는 함수
-def func2(n : int) -> int:
+def func2(n : int):
     if n == 0:
-        return 0;
-    return n+func2(n-1)
+        return 0
+    return n + func2(n - 1)
 
 print('1부터 n까지 더하는 함수')
 print(func2(10))

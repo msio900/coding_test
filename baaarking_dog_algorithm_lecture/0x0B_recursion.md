@@ -179,15 +179,16 @@ void func1(int n){
 
 ### a<sup>b</sup> mod m
 
-```c++
-int func1(int a, int b, int m){
-    int val = 1;
-    while(b--) val *= a;
-    return val % m;
-}
-```
+* 아래 코드의 결과는 0이 나옴. 왜냐하면 `int` Overflow 때문이다.
 
-* 위 코드의 결과는 0이 나옴. 왜냐하면 `int` Overflow 때문이다.
+    ```c++
+    int func1(int a, int b, int m){
+        int val = 1;
+        while(b--) val *= a;
+        return val % m;
+    }
+    ```
+
 * 6<sup>100</sup>은 `int`의 범위를 벗어남
 * 이를 해결하기 위해서는 곱하는 중간중간 계속 n으로 나눠서 나머지만 챙기면 됨.
 
@@ -195,14 +196,14 @@ int func1(int a, int b, int m){
 
 * `int` Overflow 를 고려한 코드
 
-```c++
-using ll = long long;
-ll func1(ll a, ll, b, ll, m){
-    ll val = 1;
-    while(b--) val = val * a % m;
-    return val;
-}
-```
+    ```c++
+    using ll = long long;
+    ll func1(ll a, ll, b, ll, m){
+        ll val = 1;
+        while(b--) val = val * a % m;
+        return val;
+    }
+    ```
 
 * b가 최대 20억이라 `O(b)`로 해결할 수 없을때는 어떻게 해야할까?
 
@@ -210,12 +211,12 @@ ll func1(ll a, ll, b, ll, m){
 
   * 12<sup>58</sup> ≡ 4(mod 67) -> 12<sup>116</sup> ≡ 16(mod 67) -> 귀납법 추론
 
-    ```python
-    '''
-    1승을 계산할 수 있다.
-    k승을 계산했으면 2k승과 2k+1승도 O(1)에 계산할 수 았다.
-    '''
-    ```
+```python
+'''
+1승을 계산할 수 있다.
+k승을 계산했으면 2k승과 2k+1승도 O(1)에 계산할 수 았다.
+'''
+```
 
 * c++ 풀이
 
@@ -262,9 +263,6 @@ ll func1(ll a, ll, b, ll, m){
     
     print(solution(a, b, c))
     ```
-
-    
-
 
 
 ## 0x02 연습 문제 2 - 하노이 탑[📑](#contents)<a id='0x02'></a>

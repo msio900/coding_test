@@ -44,30 +44,44 @@ In company *C2*, the only lead manager is *LM2*. There is one senior manager, *S
 
 ## ✏️정답
 
+### 1차 시도
+
 ```mysql
-SELECT distinct(a.N), CASE 
-            WHEN b.N is NULL THEN 'Leaf'
-            WHEN a.P is NULL THEN 'Root'
-            ELSE 'Inner' END
-FROM BST a
-LEFT JOIN BST b
-ON a.N = b.P
-ORDER BY a.N
+SELECT	c.company_code, 
+		c.founder, 
+		COUNT(DISTINCT(l.lead_manager_code)), 
+		COUNT(DISTINCT(s.senior_manager_code)), 
+		COUNT(DISTINCT(m.manager_code)), 
+		COUNT(DISTINCT(e.employee_code))
+FROM employee e
+JOIN company c ON c.company_code = e.company_code
+JOIN Manager m ON m.manager_code = e.manager_code
+JOIN Senior_Manager s ON s.senior_manager_code = e.senior_manager_code
+JOIN Lead_Manager l ON l.lead_manager_code = e.lead_manager_code
+GROUP BY c.company_code, c.founder
 ```
 
 ### 성공😊
 
-![image-20221129104129504](images/image-20221129104129504.png)
+![image-20221129164230818](images/image-20221129164230818.png)
 
-* 이 문제는 `BST` 테이블의 노드의 `Leaf Node`와 `Root Node`를 찾는 문제이다.
+* 
 
-* 먼저, 테이블에 담긴 부모노드의 정보를 이용하여 `LEFT JOIN`을 사용하여 자식 노드가 있는지 확인한다.
 
-  ```mysql
-  FROM BST a
-  LEFT JOIN BST b
-  ON a.N = b.P
-  ORDER BY a.N
-  ```
+### 2차 시도
 
-* 그리고 `CASE`로 `Leaf`, `Root`, `Inner`를 구분해준다.
+```mysql
+SELECT  c.company_code, 
+        ANY_VALUE(c.founder), 
+        COUNT(DISTINCT(l.lead_manager_code)), 
+        COUNT(DISTINCT(s.senior_manager_code)), 
+        COUNT(DISTINCT(m.manager_code)), 
+        COUNT(DISTINCT(e.employee_code))
+FROM employee e
+JOIN company c ON c.company_code = e.company_code
+JOIN Manager m ON m.manager_code = e.manager_code
+JOIN Senior_Manager s ON s.senior_manager_code = e.senior_manager_code
+JOIN Lead_Manager l ON l.lead_manager_code = e.lead_manager_code
+GROUP BY c.company_code
+```
+

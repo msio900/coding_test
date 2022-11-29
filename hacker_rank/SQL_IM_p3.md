@@ -47,6 +47,44 @@ In company *C2*, the only lead manager is *LM2*. There is one senior manager, *S
 ### 1차 시도
 
 ```mysql
+SELECT  c.company_code, 
+        ANY_VALUE(c.founder), 
+        COUNT(DISTINCT(e.lead_manager_code)), 
+        COUNT(DISTINCT(e.senior_manager_code)), 
+        COUNT(DISTINCT(e.manager_code)), 
+        COUNT(DISTINCT(e.employee_code))
+FROM employee e
+JOIN company c ON c.company_code = e.company_code
+GROUP BY c.company_code
+```
+
+### 성공😊
+
+![image-20221129170957790](images/image-20221129170957790.png)
+
+* 이 문제는 `company_code` 별 `founder`와 `lead_manager`, `senior_manager`, `manager`, `employee`의 총계를 출력하는 문제이다.
+
+* `employee` 테이블에 `lead_manager`, `senior_manager`, `manager`, `employee`의 코드가 다 담겨 있으므로 `founder`가 정보가 담긴 `company`테이블과 `JOIN`
+
+* `GROUP BY`이용시 `SELECT`에 집계함수외의 컬럼이 있을 경우 `only full group by`오류 발생
+
+  * `GROUP BY` 에 비집계 컬럼을 다 써줘서 해결할 수 있음.
+
+    ```mysql
+    GROUP BY c.company_code, c.founder -- company_code는 고유키
+    ```
+
+  * 혹은 비집계 컬럼이지만 컬럼에 표현하고 싶은 컬럼에 `ANY_VALUE()`를 사용
+
+    ```mysql
+    SELECT	c.company_code, -- company_code는 고유키
+    		ANY_VALUE(c.founder), 
+    		... 
+    ```
+
+### 2차 시도
+
+```mysql
 SELECT	c.company_code, 
 		c.founder, 
 		COUNT(DISTINCT(l.lead_manager_code)), 
@@ -65,23 +103,36 @@ GROUP BY c.company_code, c.founder
 
 ![image-20221129164230818](images/image-20221129164230818.png)
 
-* 
+## 다른 풀이🤝
 
-
-### 2차 시도
+> 수민님 풀이
 
 ```mysql
-SELECT  c.company_code, 
-        ANY_VALUE(c.founder), 
-        COUNT(DISTINCT(l.lead_manager_code)), 
-        COUNT(DISTINCT(s.senior_manager_code)), 
-        COUNT(DISTINCT(m.manager_code)), 
-        COUNT(DISTINCT(e.employee_code))
-FROM employee e
-JOIN company c ON c.company_code = e.company_code
-JOIN Manager m ON m.manager_code = e.manager_code
-JOIN Senior_Manager s ON s.senior_manager_code = e.senior_manager_code
-JOIN Lead_Manager l ON l.lead_manager_code = e.lead_manager_code
-GROUP BY c.company_code
+SELECT c.company_code, c.founder,
+       COUNT(DISTINCT(l.lead_manager_code)), COUNT(DISTINCT(s.senior_manager_code)),
+       COUNT(DISTINCT(m.manager_code)), COUNT(DISTINCT(e.employee_code))
+FROM company c, lead_manager l, senior_manager s, manager m, employee e
+WHERE c.company_code = l.company_code AND
+      l.lead_manager_code = s.lead_manager_code AND
+      s.senior_manager_code = m.senior_manager_code AND
+      m.manager_code = e.manager_code
+GROUP BY c.company_code, c.founder 
+ORDER BY c.company_code
 ```
 
+* 다음과 같이 모든 테이블을 다 가져옴.
+
+  ```mysql
+  FROM company c, lead_manager l, senior_manager s, manager m, employee e
+  ```
+
+* 이후, 코드가 같은 것들만 `WHERE`로 필터링
+
+  ```mysql
+  WHERE c.company_code = l.company_code AND
+        l.lead_manager_code = s.lead_manager_code AND
+        s.senior_manager_code = m.senior_manager_code AND
+        m.manager_code = e.manager_code
+  ```
+
+  

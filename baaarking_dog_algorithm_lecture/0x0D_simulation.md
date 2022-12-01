@@ -171,6 +171,86 @@
 
 * 연산량이 제한 시간 내에 통과
 
+### python으로 구현
+
+```python
+import sys
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+office_info = [list(map(int, input().split())) for _ in range(n)]
+board = [[0] * m for _ in range(n)]
+
+dx, dy = [1, 0, -1, 0], [0, 1, 0, -1]
+
+def OOB(a : int, b : int):
+    return a < 0 or a >= n or b < 0 or b >= m
+
+def upd(x : int, y : int, dir : int):
+    dir %= 4
+    while True:
+        x += dx[dir]
+        y += dy[dir]
+        if OOB(x, y) or board[x][y] ==6:
+            return
+        if board[x][y] != 0:
+            continue
+        board[x][y] = 7
+
+n, m = map(int, input().split())
+office_info = [list(map(int, input().split())) for _ in range(n)]
+board = [[0] * m for _ in range(n)]
+
+
+
+mn = 0
+coordinate = []
+for i in range(n):
+    for j in range(m):
+        if office_info[i][j] != 0 and office_info[i][j] != 6:
+            coordinate.append((i, j))
+        if office_info[i][j] == 0:
+            mn += 1
+
+for tmp in range(1<<(2*len(coordinate))):
+    for i in range(n):
+        for j in range(m):
+            board[i][j] = office_info[i][j]
+    brute = tmp
+    for i in range(len(coordinate)):
+        dir = brute % 4
+        brute //= 4
+        x, y = coordinate[i][0], coordinate[i][1]
+        if office_info[x][y] == 1:
+            upd(x, y, dir)
+        elif office_info[x][y] == 2:
+            upd(x, y, dir)
+            upd(x, y, dir + 2)
+        elif office_info[x][y] == 3:
+            upd(x, y, dir)
+            upd(x, y, dir+1)
+        elif office_info[x][y] == 4:
+            upd(x, y, dir)
+            upd(x, y, dir + 1)
+            upd(x, y, dir + 2)
+        else:
+            upd(x, y, dir)
+            upd(x, y, dir + 1)
+            upd(x, y, dir + 2)
+            upd(x, y, dir + 3)
+        val = 0
+        for i in range(n):
+            for j in range(m):
+                if board[i][j] == 0:
+                    val += 1
+        mn = min(mn, val)
+
+print(mn)
+```
+
+
+
 ## 0x01 연습 문제 2 - 스티커 붙이기 [👉🏻](#0x01)<a id='0x01'></a>
 
 

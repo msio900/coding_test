@@ -1,6 +1,11 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
+12/1(목)
+
+* **바킹독 0x09 : BFS** 2178 : 미로 탐색 [문제📝](https://www.acmicpc.net/problem/2178)
+  [풀이✏️](./2178/2178.md) 
+
 11/30(수)
 
 * **바킹독 0x0E : 정렬 1** 2750 : 수 정렬하기 [문제📝](https://www.acmicpc.net/problem/2750)

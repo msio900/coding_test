@@ -1,10 +1,8 @@
 import sys
-
 input = sys.stdin.readline
 
-n, m = map(int, input().split())
-office_info = [list(map(int, input().split())) for _ in range(n)]
-board = [[0] * m for _ in range(n)]
+dx = [1, 0, -1, 0]
+dy = [0, 1, 0, -1]
 
 # 4진수 출력하는 법
 # for tmp in range(64):
@@ -29,7 +27,7 @@ board = [[0] * m for _ in range(n)]
 
 # 3. 사각지대 개수의 최소값을 출력한다.
 
-dx, dy = [1, 0, -1, 0], [0, 1, 0, -1]
+
 
 def OOB(a : int, b : int):
     return a < 0 or a >= n or b < 0 or b >= m

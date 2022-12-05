@@ -103,7 +103,68 @@
 
 * 나머지 중에 가장 앞에 있는 수를 비교하면 됨.
 
-### 11728번 : 배열합치기
+### 백준 11728번 : 배열합치기 [문제⌨️](https://www.acmicpc.net/problem/11728)
+
+> 풀이[✏️](../acmicpc/11728/11728.md)
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int n, m;
+int a[1000005], b[1000005], c[2000005];
+
+int main(void) {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  
+  cin >> n >> m;
+  for(int i = 0; i < n; i++) cin >> a[i];
+  for(int i = 0; i < m; i++) cin >> b[i];
+  int aidx = 0, bidx = 0;
+  for(int i = 0; i < n+m; i++){
+    if(bidx == m) c[i] = a[aidx++];
+    else if(aidx == n) c[i] = b[bidx++];
+    else if(a[aidx] <= b[bidx]) c[i] = a[aidx++];
+    else c[i] = b[bidx++]; 
+  }
+  for(int i = 0; i < n+m; i++) cout << c[i] << ' ';
+}
+```
+
+* python으로 풀이
+
+  ```python
+  import sys
+  
+  input = sys.stdin.readline
+  
+  n, m = map(int, input().split())
+  a = list(map(int, input().split()))
+  b = list(map(int, input().split()))
+  c = [0]* 20000005
+  
+  aidx, bidx = 0, 0
+  
+  for i in range(n+m):
+      if bidx == m:
+          c[i] = a[aidx]
+          aidx += 1
+      elif aidx == n:
+          c[i] = b[bidx]
+          bidx += 1
+      elif a[aidx] <= b[bidx]:
+          c[i] = a[aidx]
+          aidx += 1
+      else:
+          c[i] = b[bidx]
+          bidx += 1
+  for i in range(n+m):
+      print(c[i], end=' ')
+  print()
+  ```
+
+  
 
 
 

@@ -107,9 +107,7 @@ FROM
 ### 2차 시도
 
 ```mysql
-SELECT 
-		S.hacker_id as id,
-        ANY_VALUE(H.name) as name
+SELECT S.hacker_id as id, ANY_VALUE(H.name) as name
 FROM SUBMISSIONS S
 INNER JOIN CHALLENGES C ON S.challenge_id = C.challenge_id
 INNER JOIN HACKERS H ON S.hacker_id = H.hacker_id

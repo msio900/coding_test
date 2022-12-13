@@ -69,3 +69,27 @@ WHERE IDX IN (FLOOR(@IDX / 2), CEIL(@IDX / 2))
 * 전체 행의 개수가 홀수일 경우 중위수는 가운데 값이기 때문에 `AVG()`는 중위수를 도출
 
 * 전체 행의 개수가 짝수일 경우 가운데에 있는 수가 2개이기 때문에 `AVG()` 명령을 통해 두 수의 평균으로 중위수를 도출
+
+## 🤝다른 풀이
+
+### 수민님 풀이
+
+```mysql
+SELECT ROUND(LAT_N, 4)
+FROM (SELECT LAT_N, PERCENT_RANK() OVER (ORDER BY LAT_N) AS PERCENT 
+      FROM STATION) AS SUB
+WHERE SUB.PERCENT = 0.5;
+```
+
+* `LAT_N`의 오름차순 정렬의 누적 백분율을 서브쿼르를 통해 나타냄
+
+  ```mysql
+  (SELECT LAT_N, PERCENT_RANK() OVER (ORDER BY LAT_N) AS PERCENT 
+        FROM STATION) AS SUB
+  ```
+
+* 누적 백분율의 50%되는 부분을 WHERE절을 통하여 출력
+
+  ```mysql
+  WHERE SUB.PERCENT = 0.5;
+  ```

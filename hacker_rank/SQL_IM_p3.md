@@ -1,4 +1,4 @@
-# 📝SQL IM3 : New Companies[↩](../)
+# 📝SQL IM Problem3 : New Companies[↩](../)
 
 > 문제 URL [🔗](https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true)
 

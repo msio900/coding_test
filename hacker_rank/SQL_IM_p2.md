@@ -1,4 +1,4 @@
-# 📝SQL IM2 : Binary Tree Nodes
+# 📝SQL IM Problem2 : Binary Tree Nodes
 
 > 문제 URL [🔗](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)
 

@@ -1,4 +1,4 @@
-# 📝SQL IM1 : Weather Observation Station 5
+# 📝SQL IM Problem1 : Weather Observation Station 5
 
 > 문제 URL [🔗](https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true)
 

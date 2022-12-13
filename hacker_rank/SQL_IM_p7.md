@@ -1,4 +1,4 @@
-# 📝SQL IM Problem 7 : The Report[↩](../)
+# 📝SQL IM Problem 7 : Ollivander's Inventory[↩](../)
 
 > 문제 URL [🔗](https://www.hackerrank.com/challenges/harry-potter-and-wands/problem?isFullScreen=true)
 

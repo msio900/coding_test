@@ -1,123 +1,88 @@
-# 📝SQL IM Problem5 : Top Competitors[↩](../)
+# 📝SQL IM Problem 5 : The Report[↩](../)
 
-> 문제 URL [🔗](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true)
+> 문제 URL [🔗](https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true)
 
-Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! Write a query to print the respective *hacker_id* and *name* of hackers who achieved full scores for *more than one* challenge. Order your output in descending order by the total number of challenges in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges, then sort them by ascending *hacker_id*.
+You are given two tables: *Students* and *Grades*. *Students* contains three columns *ID*, *Name* and *Marks*.
 
-------
+![img](https://s3.amazonaws.com/hr-challenge-images/12891/1443818166-a5c852caa0-1.png)
 
-**Input Format**
+*Grades* contains the following data:
 
-The following tables contain contest data:
+![img](https://s3.amazonaws.com/hr-challenge-images/12891/1443818137-69b76d805c-2.png)
 
-- *Hackers:* The *hacker_id* is the id of the hacker, and *name* is the name of the hacker. ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458526776-67667350b4-ScreenShot2016-03-21at7.45.59AM.png)
-- *Difficulty:* The *difficult_level* is the level of difficulty of the challenge, and *score* is the score of the challenge for the difficulty level. ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458526915-57eb75d9a2-ScreenShot2016-03-21at7.46.09AM.png)
-- *Challenges:* The *challenge_id* is the id of the challenge, the *hacker_id* is the id of the hacker who created the challenge, and *difficulty_level* is the level of difficulty of the challenge. ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527032-f9ca650442-ScreenShot2016-03-21at7.46.17AM.png)
-- *Submissions:* The *submission_id* is the id of the submission, *hacker_id* is the id of the hacker who made the submission, *challenge_id* is the id of the challenge that the submission belongs to, and *score* is the score of the submission. ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527077-298f8e922a-ScreenShot2016-03-21at7.46.29AM.png)
+*Ketty* gives *Eve* a task to generate a report containing three columns: *Name*, *Grade* and *Mark*. *Ketty* doesn't want the NAMES of those students who received a grade lower than *8*. The report must be in descending order by grade -- i.e. higher grades are entered first. If there is more than one student with the same grade (8-10) assigned to them, order those particular students by their name alphabetically. Finally, if the grade is lower than 8, use "NULL" as their name and list them by their grades in descending order. If there is more than one student with the same grade (1-7) assigned to them, order those particular students by their marks in ascending order.
 
-------
+Write a query to help Eve.
 
 **Sample Input**
 
-*Hackers* Table: ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527241-6922b4ad87-ScreenShot2016-03-21at7.47.02AM.png) *Difficulty* Table: ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527265-7ad6852a13-ScreenShot2016-03-21at7.46.50AM.png) *Challenges* Table: ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527285-01e95eb6ec-ScreenShot2016-03-21at7.46.40AM.png) *Submissions* Table: ![img](https://s3.amazonaws.com/hr-challenge-images/19504/1458527812-479a74b99f-ScreenShot2016-03-21at8.06.05AM.png)
+![img](https://s3.amazonaws.com/hr-challenge-images/12891/1443818093-b79f376ec1-3.png)
 
 **Sample Output**
 
 ```
-90411 Joe
+Maria 10 99
+Jane 9 81
+Julia 9 88 
+Scarlet 8 78
+NULL 7 63
+NULL 7 68
 ```
+
+
+**Note**
+
+Print "NULL" as the name if the grade is less than 8.
 
 **Explanation**
 
-Hacker *86870* got a score of *30* for challenge *71055* with a difficulty level of *2*, so *86870* earned a full score for this challenge.
+Consider the following table with the grades assigned to the students:
 
-Hacker *90411* got a score of *30* for challenge *71055* with a difficulty level of *2*, so *90411* earned a full score for this challenge.
+![img](https://s3.amazonaws.com/hr-challenge-images/12891/1443818026-0b3af8db30-4.png)
 
-Hacker *90411* got a score of *100* for challenge *66730* with a difficulty level of *6*, so *90411* earned a full score for this challenge.
+So, the following students got *8*, *9* or *10* grades:
 
-Only hacker *90411* managed to earn a full score for more than one challenge, so we print the their *hacker_id* and *name* as space-separated values.
+- *Maria (grade 10)*
+- *Jane (grade 9)*
+- *Julia (grade 9)*
+- *Scarlet (grade 8)*
 
 ## ✏️정답
 
 ### 1차 시도
 
 ```mysql
-SELECT
-    SUB.id,
-    SUB.name
-FROM 
-    (SELECT 
-        S.hacker_id as id,
-        ANY_VALUE(H.name) as name,
-        COUNT(S.hacker_id) as cnt
-    FROM
-        SUBMISSIONS S
-    INNER JOIN CHALLENGES C ON S.challenge_id = C.challenge_id
-    INNER JOIN HACKERS H ON S.hacker_id = H.hacker_id
-    INNER JOIN DIFFICULTY D ON C.difficulty_level = D.difficulty_level
-    WHERE D.score = S.score
-    GROUP BY S.hacker_id
-    HAVING COUNT(S.hacker_id) >= 2
-    ORDER BY COUNT(S.hacker_id) DESC, S.hacker_id) SUB
+SELECT IF(GRADE < 8, NULL, NAME), GRADE, MARKS
+FROM STUDENTS JOIN GRADES
+WHERE MARKS BETWEEN MIN_MARK AND MAX_MARK
+ORDER BY GRADE DESC, IF(GRADE < 8, NULL, NAME)
 ```
 
 ### 성공😊
 
-![image-20221213145908292](images/image-20221213145908292.png)
+![image-20221213153427893](images/image-20221213153427893.png)
 
-* 이 문제는 코딩 콘테스트에서 제출된 풀이 중 문제에서 만점을 맞은 풀이를 2개 이상 갖고 있는 유저를 구하는 문제임.
+* 이 문제는 *Students*, *Grade* 테이블을 사용하여 학생들의 `mark`에 따른 등급을 매기는 문제임.
 
-* 다음은 문제를 풀기 위해 `JOIN`한 테이블
+* 이 문제에서 쿼리 구현의 핵심은 다음과 같음.
 
-  ```mysql
-  FROM
-      SUBMISSIONS S
-  INNER JOIN CHALLENGES C ON S.challenge_id = C.challenge_id
-  INNER JOIN HACKERS H ON S.hacker_id = H.hacker_id
-  INNER JOIN DIFFICULTY D ON C.difficulty_level = D.difficulty_level
-  ```
+  * 등급 구간이 담긴 *Grade*테이블이 별도로 제공되어 이에 맞게 등급을 매겨야 함.
+  * 8등급 보다 작은 등급인 학생들의 이름을 NULL로 바꿔야 함.
 
-  
+* ` JOIN`명령어를 사용하되 `ON`조건을 달지 않아 `CROSS JOIN`을 사용
 
-  * `CHALLENGES` 테이블 : 문제의 난이도 확인
-  * `HACKER`  테이블 : id 당 해커의 이름 확인
-  * `DIFFICULTY` 테이블 : 제출된 풀이가 만점인지 확인
+  > ![img](https://t1.daumcdn.net/cfile/tistory/997A563D5DCEA67328)
+  > `CROSS JOIN`(교차 조인) : 두 테이블의 데이터의 모든 조합을 받아옴.
 
-* 해당 풀이가 만점인지 확인
+  * 이와 같은 교차 조인의 원리를 이용하여 모든 데이터의 조합 중 등급 구간에 맞는 조합만을 도출
 
-  ```mysql
-  WHERE D.score = S.score
-  ```
+    ```mysql
+    WHERE MARKS BETWEEN MIN_MARK AND MAX_MARK
+    ```
 
-* 참가자 당 만접 풀이 갯수 확인 및 만점 풀이가 1개 이하인 참가자 제거
+* IF문을 사용하여 8등급 이하인 학생의 이름을 `NULL`로 대체
 
   ```mysql
-  GROUP BY S.hacker_id
-  HAVING COUNT(S.hacker_id) >= 2
+  IF(GRADE < 8, NULL, NAME)
   ```
 
-* 만점이 많은 참가자 순서로 정렬, 만점인 풀이의 갯수가 같은 경우 `hacker_id`순으로 정렬
-
-  ```mysql
-  ORDER BY COUNT(S.hacker_id) DESC, S.hacker_id
-  ```
-
-* 서브쿼리를 FROM에 넣어주어 불필요한 `COUNT(S.hacker_id)`제거
-
-### 2차 시도
-
-```mysql
-SELECT S.hacker_id as id, ANY_VALUE(H.name) as name
-FROM SUBMISSIONS S
-INNER JOIN CHALLENGES C ON S.challenge_id = C.challenge_id
-INNER JOIN HACKERS H ON S.hacker_id = H.hacker_id
-INNER JOIN DIFFICULTY D ON C.difficulty_level = D.difficulty_level
-WHERE D.score = S.score
-GROUP BY S.hacker_id
-HAVING COUNT(S.hacker_id) >= 2
-ORDER BY COUNT(S.hacker_id) DESC, S.hacker_id
-```
-
-### 성공😊
-
-* 굳이 서브쿼리를 사용하지 않아도 됨.

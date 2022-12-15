@@ -36,12 +36,41 @@ The following tables contain contest data:
 ### 1차 시도
 
 ```mysql
-
+SELECT SUB.hacker_id, SUB.name, SUM(SUB.score) FROM (SELECT 
+            S.hacker_id,
+            S.challenge_id,
+            ANY_VALUE(H.name) name,
+            MAX(S.score) score
+        FROM Submissions S
+        JOIN Hackers H ON S.hacker_id = H.hacker_id
+        GROUP BY S.hacker_id, S.challenge_id) SUB
+GROUP BY SUB.hacker_id
+HAVING SUM(SUB.score) != 0
+ORDER BY SUM(SUB.score) DESC, SUB.hacker_id
 ```
 
 ### 성공😊
 
+![image-20221215151922456](images/image-20221215151922456.png)
 
+* 이 문제는 **coding contest**의 참가자들의 얻은 득점을 모두 더하는 문제임. 유의해야할 점은 다음과 같음
 
-* 
+  1. 한 참가자의 같은 문제에 대한 여러개의 점수는 최고점만 합산.
+  2. 모든 점수를 합산한 점수가 0인 참가자는 출력하지 않음.
 
+* `1`번 조건을 만족하기 위해 `FROM`절에 다음과 같은 서브쿼리를 넣음
+
+  ```mysql
+  (SELECT 
+   S.hacker_id,
+   S.challenge_id,
+   ANY_VALUE(H.name) name,
+   MAX(S.score) score
+   FROM Submissions S
+   JOIN Hackers H ON S.hacker_id = H.hacker_id
+   GROUP BY S.hacker_id, S.challenge_id) SUB
+  ```
+
+* 이후 `SUM()`집계함수를 사용하여 유저가 획득한 점수 합산
+
+* `HAVING` 조건을 통해 합산 점수가 0인 참가자 제거

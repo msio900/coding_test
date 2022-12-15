@@ -54,9 +54,70 @@ Students `12299` and `34856` both created `6` challenges. Because `6` is the max
 ### 1차 시도
 
 ```mysql
-
+WITH cnt AS
+    (
+    SELECT C.hacker_id, ANY_VALUE(H.name), COUNT(C.challenge_id) Challenges_created
+    FROM Challenges C
+    JOIN Hackers H ON C.hacker_id = H.hacker_id
+    GROUP BY C.hacker_id
+    ) 
+SELECT * 
+FROM cnt c 
+WHERE c.Challenges_created = (SELECT 
+                                MAX(Challenges_created)
+                              FROM cnt c1)
+OR c.Challenges_created IN (SELECT 
+                                Challenges_created 
+                            FROM cnt c2 
+                            GROUP BY Challenges_created 
+                            HAVING COUNT(Challenges_created) < 2)
+ORDER BY c.Challenges_created DESC, c.hacker_id
 ```
 
 ### 성공😊
 
-* 
+![image-20221215142102427](images/image-20221215142102427.png)
+
+* 이 문제는 coding challenges에 참가한 각 해커들의 챌린지 갯수를 내림차순 하도록 쿼리를 짜는 문제임. 하지만 다음과 같은 부가적인 조건이 존재함.
+
+  1. 챌린지에 참가한 수가 가장 많은 경우 참가한 수가 중복된 경우 출력
+  2. 챌린지에 참가한 수가 가장 많은 경우가 아닌데 참가한 수가 중복된 경우 명단에서 제외
+
+* 이 문제를 용이하게 하기 위해 우선 `WITH`절을 사용하여 이 문제에 필요한 컬럼만을 모아 테이블을 재정의 해줌.
+
+  ```mysql
+  WITH cnt AS
+      (
+      SELECT C.hacker_id, ANY_VALUE(H.name), COUNT(C.challenge_id) Challenges_created
+      FROM Challenges C
+      JOIN Hackers H ON C.hacker_id = H.hacker_id
+      GROUP BY C.hacker_id
+      ) 
+  ```
+
+* 첫번째 조건을 넣어주기 위해 다음과 같은 조건을 `WHERE` 절에 넣어줌
+
+  ```mysql
+  WHERE c.Challenges_created = (SELECT 
+                                  MAX(Challenges_created)
+                                FROM cnt c1)
+  ```
+
+* `2`의 조건을 만족하기 위해 다음과 같은 조건을 `WHERE` 절에 넣어줌
+
+  ```mysql
+  OR c.Challenges_created IN (SELECT 
+                                  Challenges_created 
+                              FROM cnt c2 
+                              GROUP BY Challenges_created 
+                              HAVING COUNT(Challenges_created) < 2)
+  ```
+
+* `ORDER BY`절을 다음과 같이 정의
+
+  ```mysql
+  ORDER BY c.Challenges_created DESC, c.hacker_id
+  ```
+
+  
+

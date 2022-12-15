@@ -119,5 +119,3 @@ ORDER BY c.Challenges_created DESC, c.hacker_id
   ORDER BY c.Challenges_created DESC, c.hacker_id
   ```
 
-  
-

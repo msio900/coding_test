@@ -1,6 +1,6 @@
-# ✏️0x0E강 정렬 1
+# ✏️0x1C강 플루이드 알고리즘
 
-> 영상 URL[📹](https://youtu.be/59fZkZO0Bo4)
+> 영상 URL[📹](https://youtu.be/dDDy2bEZRA8)
 
 ## 📑Contents<a id='contents'></a>
 

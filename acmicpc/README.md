@@ -1,6 +1,11 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
+12/28(수)
+
+* **바킹독 0x1E : KMP** 16916 : 부분문자열 [문제📝](https://www.acmicpc.net/problem/16916)
+  [풀이✏️](./16916/16916.md) 
+
 12/27(화)
 
 * **바킹독 0x1D : 다익스트라 알고리즘** 1753 : 최단경로 [문제📝](https://www.acmicpc.net/problem/1753)

@@ -1,6 +1,11 @@
 # 🖥️Baekjoon Online Judge[↩](../../../)
 >  코테문제 풀이 최근 순으로
 
+12/29(목)
+
+* **바킹독 0x1F : 트라이** 14425 : 문자열 집합 [문제📝](https://www.acmicpc.net/problem/14425)
+  [풀이✏️](./14425 /14425 .md) 
+
 12/28(수)
 
 * **바킹독 0x1E : KMP** 16916 : 부분문자열 [문제📝](https://www.acmicpc.net/problem/16916)

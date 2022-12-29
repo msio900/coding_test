@@ -27,6 +27,7 @@
 | 0x1C | [플루이드 알고리즘](https://youtu.be/dDDy2bEZRA8)<br />([문제📑](https://www.acmicpc.net/workbook/view/10318))<br />([정리👉](./0x1C_floyd_algorithm.md)) | **연습 문제** : [플로이드](https://www.acmicpc.net/problem/11404) | **12/26(월)** [풀이👉](../acmicpc/11404/11404.md), [정답⭕](./0x1C_11404.py) |
 | 0x1D | [다익스트라 알고리즘](https://youtu.be/o9BnvwgPT-o)<br />([문제📑](https://www.acmicpc.net/workbook/view/10433))<br />([정리👉](./0x1D_dijkstra_algorithm.md)) | **연습 문제** : [최단경로](https://www.acmicpc.net/problem/1753) | **12/27(화)** [풀이👉](../acmicpc/1753/1753.md), [정답⭕](./0x1D_1753.py) |
 | 0x1E | [KMP](https://youtu.be/9bkbV-VANQ0)<br />([문제📑](https://www.acmicpc.net/workbook/view/12205))<br />([정리👉](./0x1E_KMP.md)) | **연습 문제** : [부분 문자열](https://www.acmicpc.net/problem/16916) | **12/28(수)** [풀이👉](../acmicpc/16916/16916.md), [정답⭕](./0x1E_16916.py) |
+| 0x1F | [트라이](https://youtu.be/ZmLe4tc5XRI)<br />([문제📑](https://www.acmicpc.net/workbook/view/12649))<br />([정리👉](./0x1E_trie.md)) |                                                              |                                                              |
 
 
 
